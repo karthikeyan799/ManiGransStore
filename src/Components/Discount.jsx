@@ -17,8 +17,8 @@ export default function Discount() {
             />
             <div className='d-flex gap-5 disContainer discountBody'>
                 <div className='col-6 b-dark discountImg'>
-                    <img src="../src/assets/Mani shop/Mani-Textile_files/discount.png" alt="" />
-                    <img src="../src/assets/Mani shop/Mani-Textile_files/discount1.png" className='discountImage' alt="" />
+                    <img src="../src/assets/Mani shop/discount.png" alt="" />
+                    <img src="../src/assets/Mani shop/discount1.png" className='discountImage' alt="" />
                 </div>
                 <div className='col-4 b-danger discountCon py-4'>
                     <h5> <b> PURE SILK SAREE <span>+</span>SILK DHOTIS <span>+</span> FREE DELIVERY</b></h5>

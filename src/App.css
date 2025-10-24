@@ -132,13 +132,57 @@
   background-color: aqua;
 }
 
-.imgHover img {
-  margin: 10% 20% 3%;
+.imgBox {
+  margin: 10% 20% 0%;
   align-content: center;
   height: 300px;
   width: 250px;
   background-color: antiquewhite;
   border-radius: 5px;
+}
+
+.imgBox1 {
+  background-image: url("../src/assets/Mani shop/pinkchettinad.png");
+  background-size: cover;
+  /* margin: 10% 20% 0%;
+  align-content: center;
+  height: 300px;
+  width: 250px;
+  background-color: antiquewhite;
+  border-radius: 5px; */
+}
+
+.imgBox2 {
+  background-image: url("../src/assets/Mani shop/brownMaterial.png");
+  background-size: cover;
+  /* margin: 10% 20% 0%;
+  align-content: center;
+  height: 300px;
+  width: 250px;
+  background-color: antiquewhite;
+  border-radius: 5px; */
+}
+
+.imgBox3 {
+  background-image: url("../src/assets/Mani shop/cutKurti.png");
+  background-size: cover;
+  /* margin: 10% 20% 0%;
+  align-content: center;
+  height: 300px;
+  width: 250px;
+  background-color: antiquewhite;
+  border-radius: 5px; */
+}
+
+.imgBox4 {
+  background-image: url("../src/assets/Mani shop/floor lenght top.png");
+  background-size: cover;
+  /* margin: 10% 20% 0%;
+  align-content: center;
+  height: 300px;
+  width: 250px;
+  background-color: antiquewhite;
+  border-radius: 5px; */
 }
 
 .date {
@@ -357,7 +401,7 @@
 }
 
 .bottomLine {
-  border-bottom-style:dashed;
+  border-bottom-style: dashed;
   margin-top: 20%;
   /* width: 50px; */
   border-bottom: 2px solid red;
@@ -371,6 +415,7 @@
   /* border: 2px solid red; */
   /* margin: 20px; */
 }
+
 .fastCart img {
   height: 150px;
 }
@@ -476,7 +521,7 @@
 .title {
   font-weight: 900;
   font-size: 3rem;
-  
+
   letter-spacing: 2px;
 }
 
@@ -542,17 +587,15 @@
   /* width: 1737px; */
 }
 
-.headerImg {
-  padding: 0px;
+.headerImg .headImg{
+  /* padding: 0px; */
+  background-image: url("../src/assets/Mani shop/header1.png");
+  /* background-size: cover; */
+  width: 1000px;
 }
 
 .headerImg img {
   width: 1000px;
-  /* display: inline;
-  margin-top: 0px; */
-  /* width: 1000px;
-  height: 1000px; */
-  /* padding: 0px; */
 }
 
 .bodyContent {
@@ -586,8 +629,8 @@ hr {
   width: 4%;
   /* padding: 4px green; */
   margin: auto;
-  background-color:green;
- 
+  background-color: green;
+
 }
 
 .aboveSilk {
@@ -615,37 +658,130 @@ hr {
   font-size: larger;
   font-weight: 600;
   border-radius: 80px;
-}.star{
+}
+
+.star {
   display: flex;
   align-items: center;
-  justify-content: center;
-}.box{
+  justify-content: space-between;
+}
+
+.box {
   padding: 10px;
   margin: 5px;
   border-radius: 2px;
-}.box1{
+}
+
+.box1 {
   border-radius: 10px;
   padding: 10px;
   width: 130%;
-}.boxes:nth-of-type(1){
-  background-color: brown;
-}.boxes:nth-of-type(2){
+}
+
+.box:nth-of-type(1) {
   background-color: red;
 }
+
+.box:nth-of-type(2) {
+  background-color: brown;
+}
+
+.box:nth-of-type(3) {
+  background-color: green;
+}
+
+.box:nth-of-type(4) {
+  background-color: yellow;
+}
+
+
 /* .boxes:nth-t */
-.round{
+.round {
   /* background-color: blue; */
 }
-.round::before{
+
+.round::before {
   content: '';
   border-radius: 40px;
   background-color: yellowgreen;
 }
-.round::after{
-content: '';
-padding: 10px;
-height: 1px;
-/* background-color: silver; */
-border-right: 2px solid silver;
-/* border-right-style: dashed; */
+
+.round::after {
+  content: '';
+  padding: 10px;
+  height: 1px;
+  /* background-color: silver; */
+  border-right: 2px solid silver;
+  /* border-right-style: dashed; */
+}
+
+.kurti {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+.kurti:nth-of-type(1) {
+  background-color: green;
+}
+
+.kurti:nth-of-type(2) {
+  background-color: white;
+}
+
+.kurti:nth-of-type(3) {
+  background-color: yellow;
+}
+
+.kurti:nth-of-type(4) {
+  background-color: red;
+}
+
+.suits {
+
+  padding: 10px;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+.suits:nth-of-type(1) {
+  background-color: yellow;
+}
+
+.suits:nth-of-type(2) {
+  background-color: blue;
+}
+
+.suits:nth-of-type(3) {
+  background-color: red;
+}
+
+.cotton {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 2px;
+}
+
+.cotton:nth-of-type(1) {
+  background-color: red;
+}
+
+.cotton:nth-of-type(2) {
+  background-color: blue;
+}
+
+.cotton:nth-of-type(3) {
+  background-color: green;
+}
+
+.bi-star {
+  padding: 0px;
+  font-size: x-small;
+  font-weight: 100;
+
+}.headImg{
+background-image: url("../src/assets/Mani shop/header1.png");
+}.bodyImages{
+  display: flex;
+  
 }

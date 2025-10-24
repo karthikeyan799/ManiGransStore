@@ -19,14 +19,14 @@ export default function Category() {
             </div>
             <div className='d-flex allContent'>
                 <div className='saree border col text-center'>
-                    <img src="../src/assets/Mani shop/Mani-Textile_files/swarovski1.png" style={{ height: "300px" }} alt="" />
+                    <img src="../src/assets/Mani shop/swarovski1.png" style={{ height: "300px" }} alt="" />
                     <h6 >SILK SAREES</h6  >
                     <h5>SWAROVSKI SAREE</h5>
                     <p>Elevate your look with our elegant Silk saree - perfect for any special occasion </p>
                     <span><i className='bi bi-currency-rupee'></i>1,790</span>
                 </div>
                 <div className='saree border col text-center'>
-                    <img src="../src/assets/Mani shop/Mani-Textile_files/kurta.png" style={{ height: "300px" }} alt="" />
+                    <img src="../src/assets/Mani shop/kurta.png" style={{ height: "300px" }} alt="" />
                     <h6 >FULL SLEEVE KURTA</h6 >
                     <h5>KURTA & CONTRAST PATIALA-STYLE PANTS</h5>
                     <p>Pale orange pure silk nawabi suit features intricate jacquard design full-sleeve</p>
@@ -34,7 +34,7 @@ export default function Category() {
 
                 </div>
                 <div className='saree border col text-center'>
-                    <img src="../src/assets/Mani shop/Mani-Textile_files/gownkurta.png" style={{ height: "300px" }} alt="" />
+                    <img src="../src/assets/Mani shop/gownkurta.png" style={{ height: "300px" }} alt="" />
                     <h6 >KIDS WEAR</h6   >
                     <h5>GOWN + KURTHA</h5>
                     <p>Green tropical floral printed & embroidered ala-neck 3/4th sleeve gown</p>
@@ -42,7 +42,7 @@ export default function Category() {
 
                 </div>
                 <div className='saree border col text-center'>
-                    <img src="../src/assets/Mani shop/Mani-Textile_files/pinkmaterial1.png" style={{ height: "300px" }} alt="" />
+                    <img src="../src/assets/Mani shop/pinkmaterial1.png" style={{ height: "300px" }} alt="" />
                     <h6 >CHUDIDHAR</h6   >
                     <h5>PINK MATERIAL CHUDIDHAR CATALOG SET</h5>
                     <p>Pink material chudidhar catalog set embroidered georgette top</p>
@@ -50,7 +50,7 @@ export default function Category() {
 
                 </div>
                 <div className='saree border col text-center'>
-                    <img src="../src/assets/Mani shop/Mani-Textile_files/combo1.png" style={{ height: "300px" }} alt="" />
+                    <img src="../src/assets/Mani shop/combo1.png" style={{ height: "300px" }} alt="" />
                     <h6 >DESIGNED SAREES</h6 >
                     <h5>IKKAT DESIGN SAREE</h5>
                     <p>Multi-colour Ikkat Tussar saree with contrast border and striped pallu--vibrant and elegant</p>
