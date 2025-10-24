@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../App.css';
 export default function Discount() {
     return (
         <div className='p-3 discount'>

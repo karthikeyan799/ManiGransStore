@@ -9,7 +9,7 @@ import Footer from './Components/Footer'
 import ModernCollection from './Components/ModernCollection'
 import FastSelling from './Components/FastSelling'
 import SpecialOfferse from './Components/SpecialOfferse'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [count, setCount] = useState(0)
 

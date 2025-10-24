@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../App.css';
 export default function Category() {
     return (
         <div className='my-5 category'>

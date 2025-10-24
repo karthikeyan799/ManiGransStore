@@ -1,5 +1,6 @@
 import React from 'react'
 import header1 from '../assets/Mani shop/header1.png'
+import '../App.css';
 export default function Body() {
     return (
         <>
