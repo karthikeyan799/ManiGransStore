@@ -17,17 +17,17 @@ export default function ModernCollection() {
                 </div>
 
                 <div className='col collection'>
-                    <h6>MODERN COLLECTION</h6>
+                    <h6><b> MODERN COLLECTION</b></h6>
                     <h1>FOR CHILDRENS</h1>
                     <p className='dis'>Discover our Modern Collection for Children--a curated range of stylish,comfortable, and trend-forword clothing and accessories designed for today's kids.</p>
-                    {/* <tr>
-                    <td>2000+ New Design</td>
-                    <td>50% offer for new members</td>
-                </tr>
-                <tr>
-                    <td>10 lakhs parents delighted</td>
-                    <td>125 Rs offer on order above 999 Rs</td>
-                </tr> */}
+                        {/* <tr>
+                     <td>2000+ New Design</td>
+                       <td>50% offer for new members</td>
+                      </tr>
+                       <tr>
+                       <td>10 lakhs parents delighted</td>
+                       <td>125 Rs offer on order above 999 Rs</td>
+                        </tr> */}
                     <div className='d-flex gap-5'>
                         <div className='my-3'>
                             <p className='para '><i className='bi bi-check'></i>2000+ New Design

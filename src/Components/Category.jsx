@@ -6,19 +6,25 @@ export default function Category() {
             <h6 className='text-center text-success'>NEW ARRIVALS</h6>
             <h1 className='text-center'>BROWSE OUR CATEGORIES</h1>
             <hr />
-            <div className='d-flex all mx2 my-4'>
+            {/* <div className='d-flex all mx2 my-4'>
                 <ul className='nav gap-3'>
-                    <li className='nav-list round'>ALL</li> 
-                    <li className='nav-list round '>SILK SAREE</li>
-                    <li className='nav-list round '>KIDS + MENS</li>
-                    <li className='nav-list round'>CHUDIDHAR</li>
-                    <li className='nav-list round '>KURTHI</li>
-                    <li className='nav-list '>COAT SUITS</li>
+                    <li className='nav-list round' id='all'>
+                        <a href="" id='#all'>ALL</a>
+                        </li> 
+                    <li className='nav-list round' id='silkSaree'>
+                        <a href="#silksaree" >SILK SAREE</a>
+                    </li>
+                    <li className='nav-list round'>
+                        <a href="kids">KIDS + MENS</a>
+                    </li>
+                    <li className='nav-list round' id='chudidhar'>CHUDIDHAR</li>
+                    <li className='nav-list round' id='kurthi'>KURTHI</li>
+                    <li className='nav-list ' id='coat'>COAT SUITS</li>
                 </ul>
 
-            </div>
+            </div> */}
             <div className='d-flex allContent'>
-                <div className='saree border col text-center'>
+                <div className='saree border col text-center 'id='silksaree' >
                     <img src="../src/assets/Mani shop/swarovski1.png" style={{ height: "300px" }} alt="" />
                     <h6 >SILK SAREES</h6  >
                     <h5>SWAROVSKI SAREE</h5>

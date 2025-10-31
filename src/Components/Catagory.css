@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.app-container h1 {
+
+    /* font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: 2px; */
+
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Category Menu */
+.category-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.category-btn {
+    background: none;
+    border: 1px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    /* position: relative;
+    display: inline; */
+}
+/* .catBtn::after{
+    content: "";
+    width: 3px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    background-color: red;
+    right: -10px;
+    top: 30px;
+} */
+
+.category-btn:hover,
+.category-btn.active {
+    background: #d4af37;
+    color: white;
+    border-color: #d4af37;
+}
+
+/* Product Grid */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* gap: 25px; */
+    /* align-items: center; */
+    justify-items: center;
+}
+
+.product-card {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.best-price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: gold;
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.category {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.product-desc {
+    font-size: 13px;
+    color: #555;
+    min-height: 50px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}

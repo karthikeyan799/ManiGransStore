@@ -137,7 +137,7 @@
   align-content: center;
   height: 300px;
   width: 250px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
   border-radius: 5px;
 }
 
@@ -190,8 +190,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80px;
+  height: 80px;
+  /* padding:auto; */
   /* margin: auto; */
-  border: 2px solid;
+  border: 1px solid silver;
   border-radius: 100px;
 }
 
@@ -223,10 +226,10 @@
 }
 
 .navTags {
-  /* display: flex; */
-  /* flex-direction:; */
-  align-items: start;
-  justify-content: space-around;
+  display: flex;
+  /* flex-direction:column; */
+  align-items: center;
+  justify-content: start;
   /* text-align: start; */
   /* gap: 5px; */
   text-align: center;
@@ -243,7 +246,7 @@
   display: flex;
   justify-content: end;
   gap: 20px;
-  text-decoration-line: none;
+  /* text-decoration-line: none; */
 
 }
 
@@ -251,25 +254,45 @@
   text-decoration: none;
 }
 
+.icons .fa {
+  font-size: larger;
+}
+
 .span {
   color: orange;
 }
 
 .luxury {
-  height: 95vh;
+  /* height: 95vh; */
   align-items: center;
 }
 
 .samudrika {
   /* width: 600px;
   height: 600px; */
+  position: relative;
 }
+
 
 .samudrika img {
   width: 770px;
   height: 620px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
+  /* position: absolute; */
+}
+
+.samudrikaContent {
+  padding: 20px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.samudrikaContent span {
+  font-size: large;
+  color: orange;
 }
 
 .silkDiv {
@@ -333,6 +356,7 @@
 
 .mod {
   height: 750px;
+  /* margin: 20px 0px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +365,11 @@
 
 .collection h1 {
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.collection h6 {
+  color: silver;
 }
 
 .collection .dis {
@@ -368,8 +396,9 @@
 }
 
 .modernChild img {
-  width: 35%;
-  border: 3px solid black;
+  width: 30%;
+  height: 13%;
+  border: 4px solid white;
   /* padding: 30px; */
 
   border-radius: 50px;
@@ -390,6 +419,16 @@
 
 .fastCart .cart {
   padding: 10px 0px;
+  height: 340px;
+  /* max-height:6160px */
+}
+
+.cart h6:nth-of-type(1) {
+  color: greenyellow;
+}
+
+.cart h5 {
+  color: orange;
 }
 
 .fastCart .cart2 {
@@ -431,18 +470,42 @@
 .specialImage {
   height: 600px;
   width: 480px;
-  position: relative;
   border-radius: 10px;
   border: none;
+  /* overflow: hidden; */
   background-color: cadetblue;
 }
 
 .specialImage img {
-  height: 600px;
-  width: 480px;
+  /* height: 600px;
+  width: 480px; */
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
+  display: block;
+  /* transition: 1s ease; */
   /* position: absolute; */
 }
+
+/* .specialImage:hover img{
+  transform: scale(1.15 );  */
+
+/* filter: blur(5px); */
+/* } */
+/* .overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+} */
+.specialImage:hover .overlay {
+  opacity: 1;
+}
+
 
 .specialContent {
   margin-left: 200px;
@@ -454,11 +517,15 @@
 }
 
 .tags {
-  background-color: orange;
+  background-color: rgb(74, 69, 69);
   padding: 5px 10px;
+  color: silver;
   border-radius: 20px;
 }
 
+.moreLinks {
+  color: silver;
+}
 
 .mail {
   display: inline-flex;
@@ -551,12 +618,14 @@
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
-  height: 800px;
+  /* height: 800px; */
   margin-top: 5%;
 }
 
-.discountImg img {
+.discountImg .discountImg1 {
   /* margin-top: 15%; */
+  background-image: url("../src/assets/Mani shop/discount.png");
+  background-size: cover;
   position: absolute;
   width: 750px;
   border-radius: 10px;
@@ -570,10 +639,17 @@
   /* top: 10; */
   width: 500px;
   height: 690px;
+  background-image: url("../src/assets/Mani shop/discount1.png");
+  background-size: contain;
 }
 
 .discountCon {
   margin-left: 60px;
+}
+
+.discountCon p {
+  font-size: larger;
+  /* color: silv; */
 }
 
 .body {
@@ -587,7 +663,7 @@
   /* width: 1737px; */
 }
 
-.headerImg .headImg{
+.headerImg .headImg {
   /* padding: 0px; */
   background-image: url("../src/assets/Mani shop/header1.png");
   /* background-size: cover; */
@@ -629,7 +705,8 @@ hr {
   width: 4%;
   /* padding: 4px green; */
   margin: auto;
-  background-color: green;
+  background-color: rgb(204, 159, 63);
+  /* background-color: green; */
 
 }
 
@@ -649,12 +726,13 @@ hr {
 }
 
 .silkBtn h2 {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
   color: rgb(199, 195, 195);
 }
 
 .silkBtn button {
-  padding: 10px 25px;
+  padding: 7px 40px;
   font-size: larger;
   font-weight: 600;
   border-radius: 80px;
@@ -779,9 +857,495 @@ hr {
   font-size: x-small;
   font-weight: 100;
 
-}.headImg{
-background-image: url("../src/assets/Mani shop/header1.png");
-}.bodyImages{
+}
+
+.headImg {
+  background-image: url("../src/assets/Mani shop/header1.png");
+}
+
+.bodyImages {
   display: flex;
-  
+
+}
+
+.quick {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-content: start; */
+}
+
+.quick .tag {
+  color: silver;
+  padding: 5px;
+}
+
+.posts h5 {
+  color: gray;
+}
+
+.posts p {
+  color: silver;
+}
+
+.welcome {
+  color: silver;
+}
+
+.welcomeDiv {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.quickAmoreLinks {
+  display: flex;
+  justify-content: center;
+}
+
+#menu-open-button {
+  display: none;
+}
+
+.stars li i {
+  color: #f5b50a;
+  /* gold */
+  font-size: 15px;
+  margin: 0 2px;
+}
+
+.star h5 {
+  font-size: large;
+}
+
+a {
+  text-decoration: none;
+  color: silver;
+  padding: 5px;
+}
+
+a:active {
+  background-color: #f5b50a;
+  color: black;
+}
+
+a:hover {
+  background-color: #f5b50a;
+  color: black;
+  /* color: silver; */
+  border-radius: 20px;
+}
+
+/* Media query Mobile resolution */
+@media screen and (max-width:767px) {
+
+  .footer .copy {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: start;
+    /* justify-content: center; */
+    /* text-align: center; */
+  }
+
+  .welcome {
+    width: 100%;
+  }
+
+  .welcome .welcomeDiv {
+    width: 100%;
+  }
+
+  .quickAmoreLinks {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+  }
+
+  .special {
+
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 0px; */
+    text-align: center;
+  }
+
+  .special .specialContent {
+    /* margin-left: 100px; */
+    margin: auto;
+  }
+
+  .mail {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .mail button {
+    border-radius: 50px;
+    padding: 10px 40px;
+  }
+
+  .mail input {
+    border-radius: 50px;
+    padding: 10px 30px;
+
+  }
+
+  .luxury {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .luxury .samudrika {
+    width: 100%;
+  }
+
+  .luxury .samudrika img {
+    width: 100%;
+  }
+
+  /* Modern collection */
+  .mod {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mod .modernColl {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    /* gap: 30px; */
+    align-items: start;
+    /* width: 100%; */
+    padding: 20px;
+  }
+
+  .mod .collection {
+    margin: 0px 45px 20px;
+  }
+
+  .collection h1 {
+    font-size: 2rem;
+    margin: 20px 0px;
+  }
+
+  .collection button {
+    font-size: large;
+  }
+
+  .modern {
+    background-image: url('../src/assets/Mani shop/background-BaYQceuH.jpg');
+    background-repeat: round;
+    height: 1000px;
+    /* height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  }
+
+  .modernKids {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .modernKids img {
+    height: 350px;
+    /* background-color: aquamarine; */
+  }
+
+  /* Luxury Collection */
+  .silkDiv {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px 0px;
+    align-items: center;
+  }
+
+  .silkDiv .silk {
+    width: 50%;
+  }
+
+  .silkDiv .silk img {
+    height: auto;
+  }
+
+  /* Discount */
+
+  .discount {
+    width: 100%;
+  }
+
+  .disContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .discountBody {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .discountImg img {
+    width: 100%;
+    position: unset;
+  }
+
+  .discountImg .discountImage {
+    display: none;
+  }
+
+  .discountCon {
+    display: flex;
+    align-items: center;
+
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .discountCon button {
+    /* width: 20px; */
+    /* padding: ; */
+    display: inline-flex;
+  }
+
+  .dates {
+    margin: auto;
+  }
+
+  .bi-list {
+    padding: 10px;
+    margin-right: 4px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-size: 2rem;
+  }
+
+  .cont .nav {
+    display: none;
+  }
+
+  .cont {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    /* margin: auto; */
+    /* gap: 10px; */
+    justify-content: space-between;
+  }
+
+  .cont .list {
+    margin-right: 10px;
+  }
+
+  .cont img {
+    /* background-color: black; */
+    margin-left: -20px;
+    /* margin: -20px; */
+    /* margin-left: 90px; */
+  }
+
+  :root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5;
+    --font-size-xxl: 1.8rem;
+
+  }
+
+  .line {
+    display: none;
+  }
+
+  .cont :where(#menu-close-button, #menu-open-button) {
+    font-size: var(--font-size-l);
+  }
+
+  .cont #menu-close-button {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  .cont #menu-open-button {
+    display: block;
+    color: rgb(75, 12, 12);
+    z-index: 105;
+    border: none;
+  }
+
+  .cont .nav {
+    display: block;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-color: white;
+    /* transition: left 0.2 ease; */
+    transition: left 0.8s ease;
+  }
+
+  body.show-mobile-menu .cont .nav {
+    left: 0;
+  }
+
+  .cont .nav .nav-link {
+    color: black;
+    display: block;
+    margin-top: 17px;
+    font-size: var(--font-size-l);
+  }
+
+  .headerImg {
+    display: none;
+  }
+
+  .bodyContent {
+    width: 100%;
+    margin: 30% 0px;
+  }
+
+  .bodyContent h1 {
+    font-size: 2.7rem;
+    margin-top: 5%;
+    font-weight: 700;
+    padding-bottom: 8%;
+    border-bottom: 2px solid white;
+  }
+
+  .bodyContent h6 {
+    color: whitesmoke;
+  }
+
+  .bodyContent p {
+    margin-top: 5%;
+    font-size: larger;
+    color: aliceblue;
+  }
+
+  .silkBtn {
+    display: inline;
+    /* justify-content: center; */
+  }
+
+  .silkBtn h2 {
+    font-size: 1.4rem;
+  }
+
+  .body {
+    height: 100%;
+    background-image: url('../src/assets/Mani shop/background-B-\ Copy.jpg');
+    background-size: cover;
+  }
+
+  .bodyImages {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .imgBox {
+    margin: 20px auto;
+  }
+
+  .imgHover {
+    /* margin: auto 20px; */
+    /* border-radius: 5px;
+    height: 650px;
+    padding: 0px 20px; */
+    /* border: 2px solid; */
+  }
+
+  .star h5 {
+    font-size: large;
+  }
+
+  /* 
+  .stars {
+    color: #f5b50a;
+    display: contents;
+    justify-content: space-between;
+  } */
+
+  .stars li i {
+    color: #f5b50a;
+    /* gold */
+    font-size: 15px;
+    margin: 0 2px;
+  }
+
+  .fa-star {
+    margin: -10px;
+    font-size: large;
+  }
+
+  .learnMore {
+    margin-right: 0px;
+  }
+
+  .fastCart {
+
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100%;
+    /* align-items: center;
+  justify-content: center; */
+    /* border: 1px solid; */
+  }
+
+  .cart:nth-child(n+5) {
+    display: none;
+  }
+
+  .cart:nth-child(1) {
+    border-right: none;
+    /* display: none; */
+  }
+
+  .cart:nth-child(2) {
+    border-right: none;
+    /* display: none; */
+  }
+
+  .cart:nth-child(3) {
+    border-right: none;
+    /* display: none; */
+  }
+
+  .cart:nth-child(4) {
+    border-right: none;
+    /* display: none; */
+  }
+
+  .cart {
+    position: relative;
+    display: inline;
+  }
+
+  .cart::after {
+    content: "";
+    width: 1px;
+    height: 88%;
+    position: absolute;
+    background-color: silver;
+    top: 30px;
+    margin-left: 10px;
+    right: 0;
+
+  }
 }

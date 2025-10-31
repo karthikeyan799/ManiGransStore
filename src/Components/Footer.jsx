@@ -2,36 +2,52 @@ import React from 'react'
 import '../App.css';
 export default function Footer() {
     return (
-        <div className='bg-dark pt-5'>
-            <div className='d-flex text-white copy'>
-                <div className='col-3'>
-                    <p>Welcome to Mani textiles, a trusted name in textile and fashion based in Redhills and Gummidipoondi, Chennai.</p>
-                    <p><i className='bi bi-telephone text-warning px-2'></i>CONTACT US :9600184966 </p>
-                    <p className=''><i className='bi bi-twitter text-warning'></i>EMAIL: MANITEXTILESTHEGRANDSTORE@GMAIL.COM <br /></p>
-                    <p><i className='bi bi-location text-warning pl-2'></i>ADDRESS:NO.176/1,G.N.T ROAD,<br />
-                        VALLIMAYIL MARKET CITY, REDHILLS,<br />
-                        CHENNAI - 52(OPP TO REDHILLS POLICE STATION, NEAR CSI CHURCH)</p>
+        <div className='bg-dark footer '>
+            <div className='d-flex text-white copy py-5'>
+                <div className='col-xl-3 col-sm-12 welcome p-2'>
+                    <p>Welcome to Mani textiles, a trusted name in textile and fashion based in
+                        Redhills and Gummidipoondi, Chennai.</p>
+                    <div className='welcomeDiv gap-3'>
+                        <i className='fa fa-phone text-warning'></i>
+                        <p>CONTACT US :9600184966 </p>
+                    </div>
+                    <div className='welcomeDiv gap-3' >
+                        <i className='fa fa-envelope text-warning'></i>
+                        <p className=''>EMAIL: MANITEXTILESTHEGRANDSTORE@GMAIL.COM <br /></p>
+
+                    </div>
+                    <div className='welcomeDiv gap-3'>
+                        <i className='fa fa-map-marker text-warning'></i>
+                        <p> ADDRESS:NO.176/1,G.N.T ROAD,<br />
+                            VALLIMAYIL MARKET CITY, REDHILLS,<br />
+                            CHENNAI - 52(OPP TO REDHILLS POLICE STATION, NEAR CSI CHURCH)</p>
+                    </div>
+
                 </div>
-                <div className='col-1 bg-whit'>
-                    <h6>Quick Links</h6>
-                    <ul className='nav'>
-                        <li className='nav-lst'>Home</li>
-                        <li className='nav-lst'>Register</li>
-                        <li className='nav-lst'>Login</li>
-                        <li className='nav-lst'>Cart</li>
-                        <li className='nav-lst'>Contact</li>
-                    </ul>
+                <div className='quickAmoreLinks col-xl-3 p-2'>
+
+
+                    <div className='col-xl-5 col-sm-6 bg-whit'>
+                        <h6><b>Quick Links</b></h6>
+                        <ul className='nav quick'>
+                            <li className='tag'><a href="">Home</a></li>
+                            <li className='tag'><a href="">Register</a></li>
+                            <li className='tag'><a href="">Login</a></li>
+                            <li className='tag'><a href="">Cart</a></li>
+                            <li className='tag'><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div className='col-xl-5 col-sm-6 '>
+                        <h6> <b>More Links</b></h6>
+                        <ul className='nav quick'>
+                            <li className='tag'><a href="">Women</a></li>
+                            <li className='tag'><a href="">Track Oredr</a></li>
+                            <li className='tag'><a href="">Product Page</a></li>
+                            <li className='tag'><a href="">Buy Now</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div className='col-1'>
-                    <h6>More Links</h6>
-                    <ul className='nav'>
-                        <li className='nav-lst'>Women</li>
-                        <li>Track Oredr</li>
-                        <li>Product Page</li>
-                        <li>Buy Now</li>
-                    </ul>
-                </div>
-                <div className='col-3'>
+                <div className='col-xl-3 posts p-2'>
                     <h6>Higlishted Posts</h6>
                     <h5>MANI TEXTILES</h5>
                     <p>TRENDY DESIGNS BLENDING TRADITION WITH MODERN STYLE</p>
@@ -40,36 +56,36 @@ export default function Footer() {
                     <h5>MANI TEXTILES</h5>
                     <p>BREATHABLE MULMUL COTTON OUTFITS, PERFECT FOR EVERYDAY COMFORT</p>
                 </div>
-                <div className='col-3'>
+                <div className='col-xl-3 p-2'>
                     <h6>Popular tags</h6>
-                    <ul className='nav gap-2 navTags'>
-                        <li className="tags">Silk Sarees</li>
-                        <li className="tags">Silk Dhoties</li>
-                        <li className="tags">Kids</li>
-                        <li className="tags">Pure Silk</li>
-                        <li className="tags">Kurtha</li>
-                        <li className="tags">Ethnic</li>
-                        <li className="tags">Scurt</li>
-                        <li className="tags">Frocks</li>
-                        <li className="tags">Night Wears</li>
-                        <li className="tags">Art Silk</li>
-                        <li className="tags">Banaras</li>
-                        <li className="tags">Designer saree</li>
+                    <ul className='nav gap-3 navTags'>
+                        <li className="tags"><a href="">Silk Sarees</a></li>
+                        <li className="tags"><a href="">Silk Dhoties</a></li>
+                        <li className="tags"><a href="">Kids</a></li>
+                        <li className="tags"><a href="">Pure Silk</a></li>
+                        <li className="tags"><a href="">Kurtha</a></li>
+                        <li className="tags"><a href="">Ethnic</a></li>
+                        <li className="tags"><a href="">Scurt</a></li>
+                        <li className="tags"><a href="">Frocks</a></li>
+                        <li className="tags"><a href="">Night Wears</a></li>
+                        <li className="tags"><a href="">Art Silk</a></li>
+                        <li className="tags"><a href="">Banaras</a></li>
+                        <li className="tags"><a href="">Designer saree</a></li>
                     </ul>
                 </div>
             </div><hr />
-            <div className='containe copy'>
+            <div className='containe copy py-4'>
                 <div className='col'>
-                    <p className='text-white'>&copy;2025 All rights reserved. Development by <span className='span'>Mani-Textile</span></p>
+                    <p className='text-white'>&copy; 2025 All rights reserved. Development by <span className='span'>Mani-Textile</span></p>
 
                 </div>
                 <div className='col'>
                     <ul className='nav text-white icons'>
-                        <li><i className='bi bi-facebook'></i></li>
-                        <li><i className='bi bi-twitter'></i></li>
-                        <li><i className='bi bi-twitter'></i></li>
-                        <li><i className='bi bi-google'></i></li>
-                        <li><i className='bi bi-twitter'></i></li>
+                        <li><i className='fa fa-facebook-f'></i></li>
+                        <li><i className='fa fa-twitter'></i></li>
+                        <li><i className='fa fa-linkedin'></i></li>
+                        <li><i className='fa fa-google'></i></li>
+                        <li><i className='fa fa-pinterest-p'></i></li>
                     </ul>
                 </div>
             </div>

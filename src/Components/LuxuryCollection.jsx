@@ -2,13 +2,19 @@ import React from 'react'
 import '../App.css';
 export default function LuxuryCollection() {
     return (
-        <div className=''>
+        <div className='my-5'>
             <h6 className='text-center text-success'>OUR BEST COLLECTIONS</h6>
             <h1 className='text-center title'>CHOOSE OUR  LUXURIOUS COLLECTIONS</h1>
             <hr />
             <div className='copy d-flex luxury'>
                 <div className='col samudrika'>
                     <img src="../src/assets/Mani shop/samu.jpeg" alt="" />
+                    <div className='samudrikaContent'>
+                        <h6>STARTING FROM <i className='bi bi-currency-rupee'></i>44,000.00</h6>
+                        <h1>SAMUDRIKA <span>SILK</span> SAREE</h1>
+                        <p>Maroon floral zari design samudrika silk saree with contrast intricate zari design border & floral zari design pallu </p>
+                        <button className='learnMore px-4'>LEARN MORE</button>
+                    </div>
                 </div>
                 <div className='col bg-dange silkDiv'>
                     <div className='silk col text-center'>
