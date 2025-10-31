@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './catagory.css'
+import './Catagory.css'
 import '../App.css'
 import Catagory2 from './Catagory2';
 const categories = ["ALL", "SILK SAREE", "KIDS + MENS", "CHUDIDHAR", "KURTHI", "COAT SUITS"];

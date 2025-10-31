@@ -1,5 +1,5 @@
 import React from 'react'
-import './catagory.css'
+import './Catagory.css'
 export default function CatagoryCart({ product }) {
   return (
     <div className="product-card border">
