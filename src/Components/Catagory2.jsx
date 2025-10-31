@@ -1,6 +1,6 @@
 import React from 'react'
 import CatagoryCart from './CatagoryCart';
-import './catagory.css'
+import './Catagory.css'
 const products = [
   {
     id: 1,
