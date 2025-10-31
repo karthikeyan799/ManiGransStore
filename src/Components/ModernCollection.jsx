@@ -7,12 +7,16 @@ export default function ModernCollection() {
 
                 <div className='col modernColl text-center d-flex'>
                     <div className='col-6 modernKids'>
+                        {/* <div className='modernKidsImg'></div> */}
                         <img src=".././src/assets/Mani shop/kutchild.png" alt="" />
                     </div>
                     <div className='col-4 modernChild'>
-                        <img src=".././src/assets/Mani shop/kutchild.png" alt="img1" />
+                        <div className='modernChildImg'></div>
+                        <div className='modernChildImg'></div>
+                        <div className='modernChildImg'></div>
+                        {/* <img src=".././src/assets/Mani shop/kutchild.png" alt="img1" />
                         <img src=".././src/assets/Mani shop/kutchild.png" alt="img2" />
-                        <img src=".././src/assets/Mani shop/kutchild.png" alt="img3" />
+                        <img src=".././src/assets/Mani shop/kutchild.png" alt="img3" /> */}
                     </div>
                 </div>
 
@@ -20,7 +24,7 @@ export default function ModernCollection() {
                     <h6><b> MODERN COLLECTION</b></h6>
                     <h1>FOR CHILDRENS</h1>
                     <p className='dis'>Discover our Modern Collection for Children--a curated range of stylish,comfortable, and trend-forword clothing and accessories designed for today's kids.</p>
-                        {/* <tr>
+                    {/* <tr>
                      <td>2000+ New Design</td>
                        <td>50% offer for new members</td>
                       </tr>

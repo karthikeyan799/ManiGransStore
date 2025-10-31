@@ -274,11 +274,13 @@
 }
 
 
-.samudrika img {
+.samudrika .samudrikaImg {
   width: 770px;
   height: 620px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
+  background-image: url("../src/assets/Mani shop/samu.jpeg");
+  background-size: contain;
   /* position: absolute; */
 }
 
@@ -307,10 +309,18 @@
   /* background-color: bisque; */
 }
 
-.silk img {
+.silk .silkImg1 {
   height: 450px;
   width: 100%;
-  /* border: 2px solid; */
+  background-image: url("../src/assets/Mani shop/elite1.png");
+  background-size: cover;
+}
+
+.silk .silkImg2 {
+  height: 450px;
+  width: 100%;
+  background-image: url("../src/assets/Mani shop/parampara1.png");
+  background-size: cover;
 }
 
 .silk p {
@@ -382,8 +392,11 @@
   justify-content: center;
 }
 
-.modernKids img {
+.modernKids .modernKidsImg {
   height: 600px;
+  background-image: url(".././src/assets/Mani shop/kutchild.png");
+  background-size: cover;
+
   /* background-color: aquamarine; */
 }
 
@@ -395,10 +408,12 @@
   gap: 20px;
 }
 
-.modernChild img {
+.modernChild .modernChildImg {
   width: 30%;
   height: 13%;
   border: 4px solid white;
+  background-image: url(".././src/assets/Mani shop/kutchild.png");
+  background-size: cover;
   /* padding: 30px; */
 
   border-radius: 50px;
@@ -1002,8 +1017,9 @@ a:hover {
     width: 100%;
   }
 
-  .luxury .samudrika img {
+  .samudrika .samudrikaImg {
     width: 100%;
+
   }
 
   /* Modern collection */
@@ -1053,7 +1069,7 @@ a:hover {
     justify-content: space-around;
   }
 
-  .modernKids img {
+  .modernKids .modernKidsImg {
     height: 350px;
     /* background-color: aquamarine; */
   }
