@@ -5,7 +5,7 @@ export default function SpecialOfferse() {
 
         <div className='container my-4 special '>
             <div className='col-xl-3 specialImage my-4'>
-                <img src=".././src/assets/Mani shop/specialOffer.jpeg" alt="special image" className='' />
+                {/* <img src=".././src/assets/Mani shop/specialOffer.jpeg" alt="special image" className='' /> */}
                 {/* <div className='overlay'>
                     <h3>image</h3>
                     <p>welcome</p>

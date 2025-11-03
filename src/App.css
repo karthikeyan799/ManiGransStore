@@ -388,17 +388,15 @@
 }
 
 .modernKids {
-  display: flex;
-  justify-content: center;
-}
-
-.modernKids .modernKidsImg {
-  height: 600px;
+  /* display: flex;
+  justify-content: center; */
+  height: 500px;
+  /* background-color: #f5b50a; */
   background-image: url(".././src/assets/Mani shop/kutchild.png");
   background-size: cover;
-
-  /* background-color: aquamarine; */
 }
+
+
 
 .modernChild {
   display: flex;
@@ -410,7 +408,7 @@
 
 .modernChild .modernChildImg {
   width: 30%;
-  height: 13%;
+  height: 15%;
   border: 4px solid white;
   background-image: url(".././src/assets/Mani shop/kutchild.png");
   background-size: cover;
@@ -433,6 +431,10 @@
 }
 
 .fastCart .cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 10px 0px;
   height: 340px;
   /* max-height:6160px */
@@ -440,6 +442,26 @@
 
 .cart h6:nth-of-type(1) {
   color: greenyellow;
+}
+
+.img1 {
+  /* background-color: black; */
+  height: 160px;
+  width: 125px;
+  /* display: flex; */
+  /* justify-content: center; */
+  background-image: url("../src/assets/Mani shop/kanchipuram.png");
+  background-size: cover;
+  /* display: none; */
+}
+
+.img2 {
+  height: 150px;
+  width: 125px;
+   /* background-image: url("../src/assets/Mani shop/kanchipuram.png");
+  background-size: cover; */
+  background-image: url("../src/assets/Mani shop/froks1.png");
+  background-size: cover;
 }
 
 .cart h5 {
@@ -486,6 +508,8 @@
   height: 600px;
   width: 480px;
   border-radius: 10px;
+  background-image: url(".././src/assets/Mani shop/specialOffer.jpeg");
+  background-size: cover;
   border: none;
   /* overflow: hidden; */
   background-color: cadetblue;

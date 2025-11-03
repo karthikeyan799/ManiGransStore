@@ -7,8 +7,8 @@ export default function ModernCollection() {
 
                 <div className='col modernColl text-center d-flex'>
                     <div className='col-6 modernKids'>
-                        {/* <div className='modernKidsImg'></div> */}
-                        <img src=".././src/assets/Mani shop/kutchild.png" alt="" />
+                        <div className='modernKidsImg'></div>
+                        {/* <img src=".././src/assets/Mani shop/kutchild.png" alt="" /> */}
                     </div>
                     <div className='col-4 modernChild'>
                         <div className='modernChildImg'></div>
