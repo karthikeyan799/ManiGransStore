@@ -707,14 +707,12 @@
   /* width: 1737px; */
 }
 
-.headerImg .headImg {
-  /* padding: 0px; */
+/* .headerImg .headImg {
   background-image: url("../src/assets/Mani shop/header1.png");
-  /* background-size: cover; */
   width: 1000px;
-}
+} */
 
-.headerImg img {
+.headerImg .headImg1 {
   width: 1000px;
 }
 
