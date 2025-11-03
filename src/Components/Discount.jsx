@@ -1,5 +1,7 @@
 import React from 'react'
 import '../App.css';
+import img1 from '../assets/Mani shop/discount.png';
+import img2 from '../assets/Mani shop/discount1.png';
 export default function Discount() {
     return (
         <div className='my-3 p-3 discount'>
@@ -9,10 +11,12 @@ export default function Discount() {
             />
             <div className='d-flex gap-5 disContainer discountBody'>
                 <div className='col-xl-6 b-dark discountImg'>
-                    <div className='discountImg1'></div>
-                    <div className='discountImage'></div>
-                    {/* <img src="../src/assets/Mani shop/discount.png" alt="" />
-                    <img src="../src/assets/Mani shop/discount1.png" className='discountImage' alt="" /> */}
+                    {/* <div className='discountImg1'></div>
+                    <div className='discountImage'></div> */}
+                    <img className='discountImg1'
+                    // src="../src/assets/Mani shop/discount.png"
+                     src={img1} alt="" />
+                    <img src={img2} className='discountImage' alt="" />
                 </div>
                 <div className='col-xl-4 bgdanger discountCon py-4'>
                     <h5> <b> PURE SILK SAREE <span>+</span>SILK DHOTIS <span>+</span> FREE DELIVERY</b></h5>

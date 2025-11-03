@@ -668,8 +668,8 @@
 
 .discountImg .discountImg1 {
   /* margin-top: 15%; */
-  background-image: url("../src/assets/Mani shop/discount.png");
-  background-size: cover;
+  /* background-image: url("../src/assets/Mani shop/discount.png");
+  background-size: cover; */
   position: absolute;
   width: 750px;
   border-radius: 10px;
@@ -683,8 +683,8 @@
   /* top: 10; */
   width: 500px;
   height: 690px;
-  background-image: url("../src/assets/Mani shop/discount1.png");
-  background-size: contain;
+  /* background-image: url("../src/assets/Mani shop/discount1.png");
+  background-size: contain; */
 }
 
 .discountCon {
