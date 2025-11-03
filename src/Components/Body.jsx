@@ -27,7 +27,7 @@ export default function Body() {
 
                     </div>
                     <div className='col-8 headerImg '>
-                        <img src={header1} className='headImg1' alt="" />
+                        {/* <img src={header1} className='headImg1' alt="" /> */}
                         {/* <img src="../src/assets/Mani shop/header1.png" alt="" /> */}
                     </div>
                 </div>
