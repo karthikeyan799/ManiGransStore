@@ -4,7 +4,7 @@ import header1 from '../assets/Mani shop/header1.png'
 export default function Body() {
     return (
         <>
-            <div className='container-fluidd bg-danger body '>
+            <div className='container-fluidd bg-danger body py-4 '>
                 <div className='bodyContainer d-flex text-white'>
                     <div className='col-4 bodyContent'>
                         <h6>MANI TEXTILE NEW EDITION</h6>
