@@ -46,7 +46,8 @@ export default function Navbar() {
             </nav>
             {/* <hr /> */}
             <nav className='container-fluid cont bg-drk'>
-                <img src="../src/assets/Mani shop/mani-textile-logo-C.png" alt="" />
+                <div className='contImg'></div>
+                {/* <img src="../src/assets/Mani shop/mani-textile-logo-C.png" alt="" /> */}
                 <ul className='nav text-black ' id=''>
                     <li className="nav-list">HOME</li>
                     <li className="nav-list">MEN</li>

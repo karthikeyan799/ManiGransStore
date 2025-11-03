@@ -3,7 +3,7 @@ import header1 from '../assets/Mani shop/header1.png'
 import '../App.css';
 export default function Body() {
     return (
-        <>
+        <div className='container-fluid'>
             <div className='container-fluidd bg-danger body '>
                 <div className='bodyContainer d-flex text-white'>
                     <div className='col-4 bodyContent'>
@@ -157,6 +157,6 @@ export default function Body() {
                 </div>
                 {/* </div> */}
             </div>
-        </>
+        </div>
     )
 }
