@@ -723,7 +723,7 @@
   /* padding-left: 100px; */
 }
 
-.bodyContent h1 {
+.bodyContent .borderSilk {
   font-size: 5rem;
   font-weight: 700;
 }

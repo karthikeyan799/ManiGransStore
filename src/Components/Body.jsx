@@ -8,7 +8,7 @@ export default function Body() {
                 <div className='bodyContainer d-flex text-white'>
                     <div className='col-4 bodyContent'>
                         <h6>MANI TEXTILE NEW EDITION</h6>
-                        <h1 className=''>BORDER SILK SAREE</h1>
+                        <h1 className='borderSilk'>BORDER SILK SAREE</h1>
                         <hr className='bg-info' />
                         <p>Elevate your ethnic wardrobe with our stunning Silk Saree , a timeless addition for your special occasions.</p>
 
