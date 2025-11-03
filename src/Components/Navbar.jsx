@@ -32,7 +32,7 @@ export default function Navbar() {
     }, []);
     return (
         <>
-            <nav className='navbar border line contain hadow '>
+            <nav className='navbar border line container-fluid hadow '>
                 <ul className='nav'>
                     <li className='nav-list border'>CONTACT US:9600184966</li>
                     <li className='nav-list border'>EMAIL:MANITEXTILESTHEGRANDSTORE@GMAIL.COM</li>
