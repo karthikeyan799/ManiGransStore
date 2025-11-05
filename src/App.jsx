@@ -13,21 +13,20 @@ import Catagory2 from './Components/Catagory2'
 import CatagoryList from './Components/CatagoryList'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className=''>
-     <Navbar/>
-     <Body/>
-     <Discount/>
-     <CatagoryList/>
-     {/* <Catagory2/> */}
-     {/* <Category/> */}
-     <LuxuryCollection/>
-     <ModernCollection/>
-     <FastSelling/>
-     <SpecialOfferse/>
-     <Footer/>
+    <div className='container-flui'>
+      <Navbar />
+      <Body />
+      <Discount />
+      <CatagoryList />
+      {/* <Catagory2/> */}
+      {/* <Category/> */}
+      <LuxuryCollection />
+      <ModernCollection />
+      <FastSelling />
+      <SpecialOfferse />
+      <Footer />
     </div>
   )
 }

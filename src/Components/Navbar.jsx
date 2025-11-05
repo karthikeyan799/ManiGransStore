@@ -32,7 +32,7 @@ export default function Navbar() {
     }, []);
     return (
         <>
-            <nav className='navbar border line container-fluid hadow '>
+            <nav className='navbar navbar-exand-sm border line '>
                 <ul className='nav'>
                     <li className='nav-list border'>CONTACT US:9600184966</li>
                     <li className='nav-list border'>EMAIL:MANITEXTILESTHEGRANDSTORE@GMAIL.COM</li>
@@ -42,10 +42,8 @@ export default function Navbar() {
                     <li className='nav-list border'>LOGIN OR REGISTER</li>
                     <li className='nav-list border'>YOUR BAG <span className='batch'>0</span></li>
                 </ul>
-
             </nav>
-            {/* <hr /> */}
-            <nav className='container-fluid cont bg-drk'>
+            <nav className='container-fluid cont '>
                 <div className='contImg'></div>
                 {/* <img src="../src/assets/Mani shop/mani-textile-logo-C.png" alt="" /> */}
                 <ul className='nav text-black ' id=''>
@@ -57,9 +55,7 @@ export default function Navbar() {
                     <li className="nav-list">CONTANT</li>
                 </ul>
                 <button id='menu-open-button' className='fa fa-bars mx-3 p-3'></button>
-
             </nav>
-
         </>
     )
 }

@@ -4,29 +4,29 @@ import header1 from '../assets/Mani shop/header1.png'
 export default function Body() {
     return (
         <>
-            <div className='container-fluidd bg-danger body py-4 '>
+            <div className='container-fluidd bg-danger body py4 '>
                 <div className='bodyContainer d-flex text-white'>
                     <div className='col-4 bodyContent'>
                         <h6>MANI TEXTILE NEW EDITION</h6>
-                        <h1 className='borderSilk'>BORDER SILK SAREE</h1>
-                        <hr className='bg-info' />
+                        <h2 className='borderSilk py-4'>BORDER SILK SAREE</h2>
+                        {/* <hr className='bg-info' /> */}
                         <p>Elevate your ethnic wardrobe with our stunning Silk Saree , a timeless addition for your special occasions.</p>
 
-                        <div className='aboveSilk py-4'>
+                        <div className='aboveSilk py-2'>
                             <span className='bi bi-check'>Crafted from luxurious Silk fabric</span>
-                            <span className='bi bi-check'>His 6.3-meter saree drapes elegantly</span>
+                            <span className='bi bi-check'>This 6.3-meter saree drapes elegantly</span>
                             <span className='bi bi-check'>Offering comfort and grace</span>
                         </div>
 
 
                         <div className='silkBtn'>
-                            <h2>BEST PRICE: <span className='bi bi-currency-rupee'>1795.00</span></h2>
-                            <button className='btn btn-light'>LEARN MORE</button>
-                            <button className='btn btn-dark'>ADD TO CART</button>
+                            <h2 className='col'>BEST PRICE: ₹1795.00</h2>
+                            <button className='col btn btn-light'>LEARN MORE</button>
+                            <button className='col btn btn-dark '>ADD TO CART</button>
                         </div>
 
                     </div>
-                    <div className='col-8 headerImg '>
+                    <div className='col-7 headerImg '>
                         {/* <img src={header1} className='headImg1' alt="" /> */}
                         {/* <img src="../src/assets/Mani shop/header1.png" alt="" /> */}
                     </div>
@@ -48,11 +48,9 @@ export default function Body() {
                             <li className='nav-'><i className='fa fa-star'></i></li>
                         </ul>
                     </div>
-                    <h5>PINK CHETTINAD  COTTON SAREE</h5>
+                    <h6> PINK CHETTINAD  COTTON SAREE</h6>
                     <p>Pink chettinad cotton saree with contrast rettai pettu border of elephant,peacock,design & striped</p>
-                    <div className='' style={{
-                        display: "flex", justifyContent: "space-between", marginTop: "10%"
-                    }}>
+                    <div className='colors'>
                         <h5><i className='bi bi-currency-rupee'></i>2,300</h5>
                         <ul className='nav' >
                             <li className='cotton'></li>
@@ -79,11 +77,9 @@ export default function Body() {
                         </ul>
                     </div>
 
-                    <h5>BROWN MATERIAL CHUDIDHAR</h5>
+                    <h6>BROWN MATERIAL CHUDIDHAR</h6>
                     <p>Brown material chudidhar catalog set, batik printed & embroidered top, contrast pants & intricately</p>
-                    <div className='' style={{
-                        display: "flex", justifyContent: "space-between", marginTop: "10%"
-                    }}>
+                    <div className='colors'>
                         <h5><i className='bi bi-currency-rupee'></i>2,300</h5>
                         <ul className='nav ' >
                             <li className=' box'></li>
@@ -111,11 +107,9 @@ export default function Body() {
                             <li className='nav-'><i className='fa fa-star'></i></li>
                         </ul>
                     </div>
-                    <h5>STRAIGHT CUT KURTI</h5>
+                    <h6>STRAIGHT CUT KURTI</h6>
                     <p>Twara cream floral printed round neck, 3/4 th sleeve ,knee length straight cut kurti</p>
-                    <div className='' style={{
-                        display: "flex", justifyContent: "space-between", marginTop: "10%"
-                    }}>
+                    <div className='colors'>
                         <h5><i className='bi bi-currency-rupee'></i>2,300</h5>
                         <ul className='nav' >
                             <li className=' kurti'></li>
@@ -142,16 +136,14 @@ export default function Body() {
                             <li className='nav-'><i className='fa fa-star'></i></li>
                         </ul>
                     </div>
-                    <h5>FLOOR LENGTH TOP</h5>
+                    <h6>FLOOR LENGTH TOP</h6>
                     <p>Yellow floral design v neck , elbow sleeve, floor  length top</p>
-                    <div className='' style={{
-                        display: "flex", justifyContent: "space-between", marginTop: "10%"
-                    }}>
+                    <div className='colors'>
                         <h5><i className='bi bi-currency-rupee'></i>2,300</h5>
                         <ul className='nav' >
-                            <li className='  suits'></li>
-                            <li className='  suits'></li>
-                            <li className='  suits'></li>
+                            <li className='suits'></li>
+                            <li className='suits'></li>
+                            <li className='suits'></li>
                         </ul>
                     </div>
                 </div>

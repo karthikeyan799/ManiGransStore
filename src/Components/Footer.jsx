@@ -74,13 +74,13 @@ export default function Footer() {
                     </ul>
                 </div>
             </div><hr />
-            <div className='containe copy py-4'>
-                <div className='col'>
-                    <p className='text-white'>&copy; 2025 All rights reserved. Development by <span className='span'>Mani-Textile</span></p>
+            <div className='containe copy py-3'>
+                <div className='col reserve'>
+                    <p className=''>&copy; 2025 All rights reserved. Development by <span className='span'>Mani-Textile</span></p>
 
                 </div>
                 <div className='col'>
-                    <ul className='nav text-white icons'>
+                    <ul className='nav icons'>
                         <li><i className='fa fa-facebook-f'></i></li>
                         <li><i className='fa fa-twitter'></i></li>
                         <li><i className='fa fa-linkedin'></i></li>

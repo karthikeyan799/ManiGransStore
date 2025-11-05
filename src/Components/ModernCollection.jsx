@@ -7,7 +7,7 @@ export default function ModernCollection() {
 
                 <div className='col modernColl text-center d-flex'>
                     <div className='col-6 modernKids'>
-                        <div className='modernKidsImg'></div>
+                        {/* <div className='modernKidsImg'></div> */}
                         {/* <img src=".././src/assets/Mani shop/kutchild.png" alt="" /> */}
                     </div>
                     <div className='col-4 modernChild'>
@@ -37,7 +37,7 @@ export default function ModernCollection() {
                             <p className='para '><i className='bi bi-check'></i>2000+ New Design
 
                             </p>
-                            <p>
+                            <p className='my-4'>
                                 <i className='bi bi-check'></i>10 lakhs parents delighted
 
                             </p>
@@ -48,7 +48,7 @@ export default function ModernCollection() {
                         <div className='my-3'>
                             <p className='para '>
                                 <i className='bi bi-check'></i>50% offer for new members </p>
-                            <p>  <i className='bi bi-check'></i>125 Rs offer on order above 999 Rs
+                            <p className='my-4'>  <i className='bi bi-check'></i>125 Rs offer on order above 999 Rs
                             </p>
                             <p>
                                 <i className='bi bi-check'></i>24*7 customer support
@@ -56,8 +56,8 @@ export default function ModernCollection() {
                         </div>
                     </div>
                     <h5 className='text-warning'>BEST PRICE: <i className='bi bi-currency-rupee '></i>195.00</h5>
-                    <button className='learnMore bg-white text-black px-5 py-3'>LEARN MORE</button>
-                    <button className='learnMore bg-dark px-5 m-2 py-3'>ADD TO CART</button>
+                    <button className='learnMore bg-white text-black px-5 py3'>LEARN MORE</button>
+                    <button className='learnMore bg-dark px-5 m-2 py3'>ADD TO CART</button>
                 </div>
             </div>
         </div >
