@@ -1132,7 +1132,7 @@ hr {
 
 .welcomeDiv {
   display: flex;
-  /* justify-content: space-between; */
+  /* justify-content: center; */
 }
 
 .welcomeDiv p {

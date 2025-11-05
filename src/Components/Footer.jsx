@@ -7,18 +7,18 @@ export default function Footer() {
                 <div className='col-xl-3 col-sm-12 welcome p-2'>
                     <p>Welcome to Mani textiles, a trusted name in textile and fashion based in
                         Redhills and Gummidipoondi, Chennai.</p>
-                    <div className='welcomeDiv gap-3'>
-                        <i className='fa fa-phone text-warning'></i>
-                        <p>CONTACT US :9600184966 </p>
+                    <div className='welcomeDiv gap-2'>
+                        <i className='fa fa-phone text-warning '></i>
+                        <p className=''>CONTACT US :9600184966 </p>
                     </div>
-                    <div className='welcomeDiv gap-3' >
-                        <i className='fa fa-envelope text-warning'></i>
+                    <div className='welcomeDiv gap-1' >
+                        <i className='fa fa-envelope text-warning '></i>
                         <p className=''>EMAIL: MANITEXTILESTHEGRANDSTORE@GMAIL.COM <br /></p>
 
                     </div>
-                    <div className='welcomeDiv gap-3'>
+                    <div className='welcomeDiv gap-2'>
                         <i className='fa fa-map-marker text-warning'></i>
-                        <p> ADDRESS:NO.176/1,G.N.T ROAD,<br />
+                        <p className=''> ADDRESS:NO.176/1,G.N.T ROAD,<br />
                             VALLIMAYIL MARKET CITY, REDHILLS,<br />
                             CHENNAI - 52(OPP TO REDHILLS POLICE STATION, NEAR CSI CHURCH)</p>
                     </div>
