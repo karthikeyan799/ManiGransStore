@@ -25,7 +25,7 @@ function App() {
       <LuxuryCollection />
       <ModernCollection />
       <FastSelling />
-      <SpecialOfferse />
+      {/* <SpecialOfferse /> */}
       <Footer />
     </div>
   )
