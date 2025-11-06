@@ -1254,7 +1254,8 @@ a {
 }
 
 /* Media query Mobile resolution */
-@media screen and (max-width:767px) {
+/* @media screen and (max-width:767px) { */
+@media screen and (max-width:600px) {
 
   .footer .copy {
     padding: 30px;
