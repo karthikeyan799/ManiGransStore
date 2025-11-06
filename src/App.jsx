@@ -23,8 +23,8 @@ function App() {
       {/* <Catagory2/> */}
       {/* <Category/> */}
       <LuxuryCollection />
-      {/* <ModernCollection />
-      <FastSelling /> */}
+      <ModernCollection />
+      {/* <FastSelling /> */}
       <SpecialOfferse />
       <Footer />
     </div>
