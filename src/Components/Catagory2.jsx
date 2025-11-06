@@ -3,6 +3,10 @@ import CatagoryCart from './CatagoryCart';
 import './Catagory.css'
 // import img1 from '../src/assets/Mani shop/swarovski1.png'
 import img1 from '../assets/Mani shop/swarovski1.png'
+import img2 from '../assets/Mani shop/kurta.png'
+import img3 from "../assets/Mani shop/gownkurta.png"
+import img4 from "../assets/Mani shop/pinkmaterial1.png"
+import img5 from "../assets/Mani shop/combo1.png"
 const products = [
   {
     id: 1,
@@ -19,7 +23,7 @@ const products = [
     category: "KIDS + MENS",
     description: "Pale orange pure silk nawabi suit features intricate jacquard design full-sleeve.",
     price: 3059,
-    image: "../src/assets/Mani shop/kurta.png",
+    image: img2,
     bestPrice: false,
   },
   {
@@ -28,7 +32,7 @@ const products = [
     category: "KIDS + MENS",
     description: "Green tropical floral printed & embroidered ala-neck 3/4th sleeve gown.",
     price: 3420,
-    image: "../src/assets/Mani shop/gownkurta.png",
+    image: img3,
     bestPrice: false,
   },
   {
@@ -37,7 +41,7 @@ const products = [
     category: "CHUDIDHAR",
     description: "Pink material churidar catalog set, embroidered georgette top.",
     price: 999,
-    image: "../src/assets/Mani shop/pinkmaterial1.png",
+    image:img4 ,
     bestPrice: true,
   },
   {
@@ -46,12 +50,12 @@ const products = [
     category: "SILK SAREE",
     description: "Multi-colour Ikkat Tussar saree with contrast border and striped pallu — vibrant and elegant.",
     price: 2665,
-    image: "../src/assets/Mani shop/combo1.png",
+    image: img5,
     bestPrice: false,
   },
 ];
-export default function Catagory2({category}) {
-     const filteredProducts =
+export default function Catagory2({ category }) {
+  const filteredProducts =
     category === "ALL"
       ? products
       : products.filter((p) => p.category === category);
