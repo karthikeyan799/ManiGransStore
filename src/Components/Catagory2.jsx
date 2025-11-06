@@ -1,6 +1,8 @@
 import React from 'react'
 import CatagoryCart from './CatagoryCart';
 import './Catagory.css'
+// import img1 from '../src/assets/Mani shop/swarovski1.png'
+import img1 from '../assets/Mani shop/swarovski1.png'
 const products = [
   {
     id: 1,
@@ -8,7 +10,7 @@ const products = [
     category: "SILK SAREE",
     description: "Elevate your look with our elegant Silk Saree – perfect for any special occasion.",
     price: 1790,
-    image: "../src/assets/Mani shop/swarovski1.png",
+    image: img1,
     bestPrice: true,
   },
   {
