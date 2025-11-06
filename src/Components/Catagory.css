@@ -28,7 +28,9 @@ body {
 /* Category Menu */
 .category-menu {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
     gap: 15px;
     margin-bottom: 30px;
 }
@@ -45,16 +47,24 @@ body {
     /* position: relative;
     display: inline; */
 }
-/* .catBtn::after{
+.catBtn{
+    position: relative;
+    display: inline;
+}
+.catBtn::after,.catBtn:nth-child(n+7){
     content: "";
-    width: 3px;
+    width: 1px;
     height: 30px;
     display: block;
     position: absolute;
-    background-color: red;
+    background-color: silver;
     right: -10px;
-    top: 30px;
-} */
+    top: 5px;
+}.catBtn:nth-child(6)::after{
+    background-color:white;
+    /* display: none; */
+    /* border: none; */
+}
 
 .category-btn:hover,
 .category-btn.active {
