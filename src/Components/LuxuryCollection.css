@@ -1,31 +1,5 @@
-.silkDiv {
-  display: flex;
 
-}
-
-.silk .silkImg1 {
-  height: 350px;
-  width: 100%;
-  /* margin: 0% 10%; */
-  background-image: url("../src/assets/Mani shop/elite1.png");
-  background-size: contain;
-}
-
-.silk .silkImg2 {
-  height: 350px;
-  width: 100%;
-  background-image: url("../src/assets/Mani shop/parampara1.png");
-  background-size: contain;
-}
 
 @media screen and (max-width:767px) {
-  .silk .silkImg1 {
-    width: 100%;
-  }
-
-  .silk .silkImg2 {
-    width: 100%;
-    margin: 0% 10%;
-    /* background-color: aqua; */
-  }
+ 
 }

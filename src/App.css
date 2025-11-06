@@ -336,6 +336,26 @@
   font-size: smaller;
 }
 
+.silkDiv {
+  display: flex;
+
+}
+
+.silk .silkImg1 {
+  height: 350px;
+  width: 100%;
+  /* margin: 0% 10%; */
+  background-image: url("../src/assets/Mani shop/elite1.png");
+  background-size: contain;
+}
+
+.silk .silkImg2 {
+  height: 350px;
+  width: 100%;
+  background-image: url("../src/assets/Mani shop/parampara1.png");
+  background-size: contain;
+}
+
 /* .silkDiv {
   display: flex;
   height: 512px;
@@ -1423,6 +1443,16 @@ a {
 
   .silkDiv .silk {
     /* width: 50%; */
+  }
+
+  .silk .silkImg1 {
+    width: 100%;
+  }
+
+  .silk .silkImg2 {
+    width: 100%;
+    margin: 0% 10%;
+    /* background-color: aqua; */
   }
 
   /*------------------------------------- Discount ------------------------*/
