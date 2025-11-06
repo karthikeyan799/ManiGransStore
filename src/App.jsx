@@ -17,8 +17,8 @@ function App() {
   return (
     <div className='container-flui'>
       <Navbar />
-      {/* <Body />
-      <Discount /> */}
+      <Body />
+      {/* <Discount /> */}
       {/* <CatagoryList /> //reason*/}
       {/* <Catagory2/> */}
       {/* <Category/> */}
