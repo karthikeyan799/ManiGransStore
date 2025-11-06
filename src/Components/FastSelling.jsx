@@ -9,7 +9,7 @@ export default function FastSelling() {
                 <hr className='my-4' />
             </div>
             <div className='fastCart '>
-                <div className='col-xl-2 col cart cart1'>
+                <div className='col-xl-2 col cart cart1 cartSide'>
                     <div className='img1 my-4 text-center'>
                     </div>
                     {/* <img className='my-4' src="../src/assets/Mani shop/kanchipuram.png" alt="" /> */}
@@ -24,7 +24,7 @@ export default function FastSelling() {
                     <h6><b> GOWNS & FROKS </b></h6>
                     <h5><i className='bi bi-currency-rupee'></i>1,200</h5>
                 </div>
-                <div className='col-xl-2 col cart cart1'>
+                <div className='col-xl-2 col cart cartSide cart1'>
                     <div className='img3  my-4'></div>
                     {/* <img className='my-4 ' src="../src/assets/Mani shop/kuta1.png" alt="" /> */}
                     <h6>MENS WEAR</h6>

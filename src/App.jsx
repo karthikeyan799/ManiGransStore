@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <Body />
       <Discount />
-      <CatagoryList />
+      {/* <CatagoryList /> //reason*/}
       {/* <Catagory2/> */}
       {/* <Category/> */}
       <LuxuryCollection />

@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className='quickAmoreLinks col-xl-3 p-2'>
 
 
-                    <div className='col-xl-5 col-sm-6 bg-whit'>
+                    <div className='col-xl-5 col-sm6 bg-whit'>
                         <h6><b>Quick Links</b></h6>
                         <ul className='nav quick'>
                             <li className='tag'><a href="">Home</a></li>
@@ -37,7 +37,7 @@ export default function Footer() {
                             <li className='tag'><a href="">Contact</a></li>
                         </ul>
                     </div>
-                    <div className='col-xl-5 col-sm-6 '>
+                    <div className='col-xl-5 col-sm6 '>
                         <h6> <b>More Links</b></h6>
                         <ul className='nav quick'>
                             <li className='tag'><a href="">Women</a></li>

@@ -1,12 +1,13 @@
 import React from 'react'
-import '../App.css';
+// import '../App.css';
+import '../Components/LuxuryCollection.css'
 export default function LuxuryCollection() {
     return (
-        <div className='my-5'>
+        <div className='my5'>
             <h6 className='text-center text-success'>OUR BEST COLLECTIONS</h6>
             <h1 className='text-center title'>CHOOSE OUR  LUXURIOUS COLLECTIONS</h1>
             <hr />
-            <div className='copy d-flex luxury my-5'>
+            <div className=' d-flex luxury my-5 '>
                 <div className='col samudrika'>
                     <div className='samudrikaImg'></div>
                     {/* <img src="../src/assets/Mani shop/samu.jpeg" alt="" /> */}

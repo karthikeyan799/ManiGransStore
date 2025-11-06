@@ -8,7 +8,7 @@ export default function Body() {
                 <div className='bodyContainer d-flex text-white'>
                     <div className='col-4 bodyContent'>
                         <h6>MANI TEXTILE NEW EDITION</h6>
-                        <h2 className='borderSilk py-4'>BORDER SILK SAREE</h2>
+                        <h2 className='borderSilk py3'>BORDER SILK SAREE</h2>
                         {/* <hr className='bg-info' /> */}
                         <p>Elevate your ethnic wardrobe with our stunning Silk Saree , a timeless addition for your special occasions.</p>
 
@@ -21,8 +21,8 @@ export default function Body() {
 
                         <div className='silkBtn'>
                             <h2 className='col'>BEST PRICE: ₹1795.00</h2>
-                            <button className='col btn btn-light'>LEARN MORE</button>
-                            <button className='col btn btn-dark '>ADD TO CART</button>
+                            <button className='col btn btn-light learnMoremodern'>LEARN MORE</button>
+                            <button className='col btn btn-dark learnMoremodern'>ADD TO CART</button>
                         </div>
 
                     </div>

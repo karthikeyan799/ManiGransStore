@@ -33,11 +33,11 @@ export default function ModernCollection() {
                        <td>125 Rs offer on order above 999 Rs</td>
                         </tr> */}
                     <div className='d-flex gap-5'>
-                        <div className='my-3'>
+                        <div className='my-3 paradiv'>
                             <p className='para '><i className='bi bi-check'></i>2000+ New Design
 
                             </p>
-                            <p className='my-4'>
+                            <p className=''>
                                 <i className='bi bi-check'></i>10 lakhs parents delighted
 
                             </p>
@@ -45,10 +45,10 @@ export default function ModernCollection() {
                                 <i className='bi bi-check'></i>500 new style every month
                             </p>
                         </div>
-                        <div className='my-3'>
+                        <div className='my-3 paraHide paradiv'>
                             <p className='para '>
                                 <i className='bi bi-check'></i>50% offer for new members </p>
-                            <p className='my-4'>  <i className='bi bi-check'></i>125 Rs offer on order above 999 Rs
+                            <p className=''>  <i className='bi bi-check'></i>125 Rs offer on order above 999 Rs
                             </p>
                             <p>
                                 <i className='bi bi-check'></i>24*7 customer support
@@ -56,8 +56,10 @@ export default function ModernCollection() {
                         </div>
                     </div>
                     <h5 className='text-warning'>BEST PRICE: <i className='bi bi-currency-rupee '></i>195.00</h5>
-                    <button className='learnMore bg-white text-black px-5 py3'>LEARN MORE</button>
-                    <button className='learnMore bg-dark px-5 m-2 py3'>ADD TO CART</button>
+                    <div className='modernButtons'>
+                        <button className='learnMoremodern bg-white text-black'>LEARN MORE</button>
+                        <button className='learnMoremodern bg-dark'>ADD TO CART</button>
+                    </div>
                 </div>
             </div>
         </div >

@@ -14,8 +14,8 @@ export default function Discount() {
                     {/* <div className='discountImg1'></div>
                     <div className='discountImage'></div> */}
                     <img className='discountImg1'
-                    // src="../src/assets/Mani shop/discount.png"
-                     src={img1} alt="" />
+                        // src="../src/assets/Mani shop/discount.png"
+                        src={img1} alt="" />
                     <img src={img2} className='discountImage' alt="" />
                 </div>
                 <div className='col-xl-4 bgdanger discountCon py-4'>
@@ -40,9 +40,10 @@ export default function Discount() {
                         </div>
                     </div>
                     <p className='py-3 para'>Discover elegance at half trhe price! Shop our exclusive collection of premium silk dhotis and sarees now available at 50% OFF.</p>
-                    <button className='learnMoreDiscount'>LEARN MORE</button>
-                    <button className='addToCartDiscount'>ADD TO CART</button>
-
+                    <div className=''>
+                        <button className='learnMoreDiscount'>LEARN MORE</button>
+                        <button className='addToCartDiscount'>ADD TO CART</button>
+                    </div>
                 </div>
             </div>
         </div>
