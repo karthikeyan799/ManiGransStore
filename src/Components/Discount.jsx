@@ -21,7 +21,7 @@ export default function Discount() {
                 <div className='col-xl-4 bgdanger discountCon py-4'>
                     <h5>  PURE SILK SAREE <span>+</span> SILK DHOTIS <span>+</span> FREE DELIVERY</h5>
                     <h5><b>BEST PRICE:</b><span className=''><i className='bi bi-currency-rupee'></i>2,500.00</span></h5>
-                    <div className='d-flex py-3 gap-4 dates'>
+                    <div className='d-flex py-3 gap-3 dates'>
                         <div className='d-flex date' >
                             <h5>20</h5>
                             <p>DAYS</p>
