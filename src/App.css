@@ -1255,7 +1255,7 @@ a {
 
 /* Media query Mobile resolution */
 @media screen and (max-width:767px) {
-/* @media screen and (max-width:600px) { */
+  /* @media screen and (max-width:600px) { */
 
   .footer .copy {
     padding: 30px;
@@ -1288,6 +1288,12 @@ a {
     flex-direction: column;
     /* margin-left: 0px; */
     text-align: center;
+  }
+
+  .special .specialImage {
+    height: 370px;
+    width: 300px;
+    background-size: contain;
   }
 
   .special .specialContent {
