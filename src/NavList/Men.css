@@ -32,9 +32,11 @@
 }
 
 .mens-list {
+    width: 100%;
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: row;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .cart {
@@ -106,4 +108,10 @@
         /* display: flex; */
         /* flex-direction: column; */
     }
+    .mens-list{
+        /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+}
 }
