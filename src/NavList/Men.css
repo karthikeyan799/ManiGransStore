@@ -100,6 +100,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+    }
+    .questions input{
+        width: 100%;
+        /* display: flex; */
+        /* flex-direction: column; */
     }
 }
