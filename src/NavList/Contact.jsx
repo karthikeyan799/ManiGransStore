@@ -7,23 +7,23 @@ export default function Contact() {
         <p>CONTACT US</p>
         <h3><b> WE READY FOR YOUR QUESTIONS</b></h3>
         <div className='contactIcons d-flex py-3'>
-          <div className='address col'>
+          <div className='content col'>
             <span className='fas fa fa-map-marker p-4'></span>
             <h6>ADDRESS</h6>
             <p>No. 119/1, GNT Road, Vellore Market City, RedHills, Chennai - 52
               (Opp to RedHills Police Station, Near CSI Church)</p>
           </div>
-          <div className='phone col my5'>
+          <div className='content col my5'>
             <span className='fas fa fa-phone p-4'></span>
             <h6>PHONE</h6>
             <p>9600746966</p>
           </div>
-          <div className='email col'>
+          <div className='content col'>
             <span className='fas fa fa-envelope p-4'></span>
             <h6>EMAIL</h6>
             <p>MANITEXTILESTHEGRANDSTORE@GMAIL.COM</p>
           </div>
-          <div className='follows col'>
+          <div className='content col'>
             <span className='fas fa fa-users p-4'></span>
             <h6>FOLLOWS US</h6>
             <ul className='nav icons'>
@@ -39,7 +39,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className='text-center'>
+      <div className='text-center my-4'>
         <iframe width="90%" height="450" scrolling="no" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=21-20,%20Ratna%20Nagar%20Main%20Rd,%20Phase%201,%20Swarnambigai%20Nagar,%20Virugambakkam,%20Chennai,%20Tamil%20Nadu%20600092+(karthikeyan)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/it/calcola-la-popolazione-su-una-mappa/">città più popolate Italia mappa</a></iframe>
       </div>
       <div className='questions text-center my-5'>
