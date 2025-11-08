@@ -2,9 +2,9 @@ import React from 'react'
 import '../App.css';
 export default function Footer() {
     return (
-        <div className='bg-dark footer '>
+        <div className='bg-dark footer container-fluid'>
             <div className='d-flex text-white copy py-5'>
-                <div className='col-xl-3 col-sm-12 welcome p-2'>
+                <div className='col-x-3 footerCopy col sm-12 welcome p-2'>
                     <p>Welcome to Mani textiles, a trusted name in textile and fashion based in
                         Redhills and Gummidipoondi, Chennai.</p>
                     <div className='welcomeDiv gap-2'>
@@ -24,7 +24,7 @@ export default function Footer() {
                     </div>
 
                 </div>
-                <div className='quickAmoreLinks col-xl-3 p-2'>
+                <div className='quickAmoreLinks col-x-3 footerCopy col p-2'>
 
 
                     <div className='col-xl-5 col-sm6 bg-whit'>
@@ -47,7 +47,7 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className='col-xl-3 posts p-2'>
+                <div className='col-x-3 footerCopy col posts p-2'>
                     <h6>Higlishted Posts</h6>
                     <h5>MANI TEXTILES</h5>
                     <p>TRENDY DESIGNS BLENDING TRADITION WITH MODERN STYLE</p>
@@ -56,7 +56,7 @@ export default function Footer() {
                     <h5>MANI TEXTILES</h5>
                     <p>BREATHABLE MULMUL COTTON OUTFITS, PERFECT FOR EVERYDAY COMFORT</p>
                 </div>
-                <div className='col-xl-3 p-2'>
+                <div className='col-x-3 footerCopy col p-2'>
                     <h6>Popular tags</h6>
                     <ul className='nav gap-3 navTags'>
                         <li className="tags"><a href="">Silk Sarees</a></li>

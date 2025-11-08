@@ -1,0 +1,92 @@
+.mensHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding: 6% 5%;
+    /* height: 100px; */
+}
+
+.mensHeader h6 {
+    font-size: smaller;
+}
+
+.mensHeader h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    width: 25%;
+}
+
+.learnMoremodern {
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: #f5b50a;
+    color: white;
+    border: none;
+    font-size: medium;
+}
+
+.buttons-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.mens-list {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.cart {
+    background-color: aliceblue;
+    padding: 7%;
+}
+
+/* -----------------------------------Contact us----------------------------- */
+.contact p {
+    font-size: small;
+}
+
+.contactIcons {
+    /* background-color: #d19c0a; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.follows .icons {
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    gap: 10px;
+}
+
+.col .fas {
+    color: #d19c0a;
+    font-size: 1.8rem;
+}
+
+.contactIcons p {
+    font-size: 15px;
+    /* font-weight: 600; */
+}
+
+.questions {
+    width: 70%;
+    margin: auto;
+    gap: 20px;
+}
+.questions input{
+    margin: 10px;
+    /* margin: 10px 0px; */
+    padding: 10px;
+    border-radius: 30px;
+}
+.questions #textarea{
+   /* text-align:initial; */
+    padding: 10px;
+    height: 150px;
+    border-radius: 15px;
+}
