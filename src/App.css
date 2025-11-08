@@ -1615,6 +1615,7 @@ a {
 
   body.show-mobile-menu .cont .nav {
     left: 0;
+    position: fixed;
   }
 
   .cont .nav .nav-link {
