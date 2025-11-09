@@ -44,6 +44,23 @@
   display: none;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: brown;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
 .cont .contImg {
   /* background-color: #f5b50a; */
   /* padding: 0px; */
@@ -1004,7 +1021,11 @@
 .bodyContent p {
   font-size: large;
 }
-
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
 .bodyContainer {
 
   width: 80%;
@@ -1724,17 +1745,50 @@ a {
     /* right: 0; */
     /* position: fixed; */
   }
-.lr{
-  display: flex;
-  flex-direction: column;
-}
+
+
   .nav .nav-item,
   .nav .nav-list {
     width: 100%;
-    padding: 10px 10px;
+    padding: 3px;
     border: 1px solid whitesmoke;
     /* background-color: #f5b50a; */
   }
+
+  .contUl {
+    /* position: relative; */
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .items {
+    /* width: 250px; */
+    width: 100%;
+    display: block;
+    /* background-color: aqua; */
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #8B4513;
+    flex-direction: column;
+    gap: 0;
+    /* height: 100%; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    max-height: 300px;
+  }
+
 
   .navMenu .nav .nav-link {
     color: black;
