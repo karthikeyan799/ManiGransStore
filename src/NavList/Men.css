@@ -12,9 +12,9 @@
 }
 
 .mensHeader h2 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    width: 25%;
+    /* font-size: 1.7rem; */
+    /* font-weight: 600; */
+    /* width: 25%; */
 }
 
 .learnMoremodern {
@@ -58,10 +58,10 @@
     align-items: baseline;
 }
 
-.follows .icons {
+.content .icons {
     display: flex;
     justify-content: center;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     gap: 10px;
 }
 

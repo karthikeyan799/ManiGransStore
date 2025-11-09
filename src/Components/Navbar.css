@@ -1,0 +1,71 @@
+@media screen and (max-width:600) {
+    
+  :root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5;
+    --font-size-xxl: 1.8rem;
+
+  }
+
+  /* .line :where(#menu-close-button, #menu-open-button) {
+    font-size: var(--font-size-l);
+   
+  } */
+
+  .navMenu :where(#menu-close-button, #menu-open-button) {
+    font-size: var(--font-size-l);
+  }
+
+  .navMenu #menu-close-button {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  .navMenu #menu-open-button {
+    display: block;
+
+    color: rgb(75, 12, 12);
+    z-index: 105;
+    border: none;
+  }
+
+  .navMenu .navs .nav {
+    display: block;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: start;
+    padding-top: 100px;
+    background-color: white;
+    /* transition: left 0.2 ease; */
+    transition: left 0.8s ease;
+  }
+
+  .nav .nav-item {
+    /* width: 100%; */
+    /* margin: 20px 10px; */
+    padding: 20px 10px;
+    background-color: #f5b50a;
+  }
+
+  body.show-mobile-menu .navMenu .navs .nav {
+    left: 0;
+    position: fixed;
+  }
+
+  .cont .nav .nav-link {
+    color: black;
+    display: block;
+    margin-top: 17px;
+    font-size: var(--font-size-l);
+  }
+
+}

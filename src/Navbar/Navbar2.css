@@ -1,0 +1,11 @@
+.navMnu{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.navMnu .border .nav:nth-child(1){
+    display: none;
+
+}.navMnu .border .nav{
+    background-color: antiquewhite;
+}

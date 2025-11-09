@@ -8,7 +8,7 @@ export default function Kids() {
     <div>
       <div className='bg-dark text-white mensHeader'>
         <h6>NEW ARRIVALS</h6>
-        <h2 className='text-end'>KIDS COLLECTION FRESH AND TRENDY</h2>
+        <h4 className='text-end'><b> KIDS COLLECTION <br /> FRESH AND TRENDY</b></h4>
         <button className='learnMoremodern'>EXPLORE NOW</button>
       </div>
       <div className='container-fluid mens-list'>
