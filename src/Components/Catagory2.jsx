@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CatagoryCart from './CatagoryCart';
 import './Catagory.css'
 // import img1 from '../src/assets/Mani shop/swarovski1.png'
@@ -41,7 +41,7 @@ const products = [
     category: "CHUDIDHAR",
     description: "Pink material churidar catalog set, embroidered georgette top.",
     price: 999,
-    image:img4 ,
+    image: img4,
     bestPrice: true,
   },
   {
@@ -54,16 +54,31 @@ const products = [
     bestPrice: false,
   },
 ];
-export default function Catagory2({ category }) {
+
+export default function Catagory2({ category ,onReset }) {
+  const [prod, setProd] = useState("ALL")
+   const handleReset = () => {
+    setProd("ALL");
+  };
+  // const filteredProducts =
+  //   category === "ALL"
+  //     ? products.filter((p)=>p.category!==category)
+  //     : products.filter((p) => p.category === category);
+ 
   const filteredProducts =
-    category === "ALL"
-      ? products
+    category === prod ? products
       : products.filter((p) => p.category === category);
   return (
     <div className="product-list ">
-      {filteredProducts.map((item) => (
+
+      {filteredProducts.length !== 0 ? filteredProducts.map((item) => (
         <CatagoryCart key={item.id} product={item} />
-      ))}
+
+      )) : (<div> <p>No Products match your filters</p>
+        <button onClick={onReset}>Reset Filters</button>
+      </div>)}
+     
     </div>
   )
+
 }

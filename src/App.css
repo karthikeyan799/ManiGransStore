@@ -1314,7 +1314,7 @@ a {
 
 /* Media query Mobile resolution */
 /* @media screen and (max-width:642px) { */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:992px) {
 
   .footer .copy {
     padding: 30px;
@@ -1382,8 +1382,8 @@ a {
   /* -------------------------Modern collection------------------------- */
   .modern {
     background-image: url('../src/assets/Mani shop/background-BaYQceuH.jpg');
-    background-repeat: round;
-    height: 1000px;
+    /* background-repeat: round; */
+    /* height: 1000px; */
     /* height: 700px;
   display: flex;
   justify-content: center;
@@ -1736,13 +1736,13 @@ a {
   }
 
   /* .navMenu .cont .contUl { */
-  .navMenu .cont .contUl .navbar .nav-menu{ 
+  .navMenu .cont .contUl .navbar .nav-menu {
 
     position: fixed;
-    left: -300px;
+    /* left: -300px; */
     top: 0px;
     /* right: 0; */
-    /* right: -300px; */
+    right: -300px;
     /* left: 0; */
     width: 250px;
     height: 100%;
@@ -1751,14 +1751,14 @@ a {
     flex-direction: column;
     justify-content: start;
     background-color: white;
-    transition: left 0.8s ease;
+    transition: right 0.8s ease;
   }
 
   .navbar .nav-menu.active {
     /* height: 100px; */
     /* max-height: 300px; */
     left: 0;
-    
+
 
     color: red;
     background-color: blue;
@@ -1887,6 +1887,10 @@ a {
     height: 100%;
     background-image: url('../src/assets/Mani shop/background-B-\ Copy.jpg');
     background-size: cover;
+    /* backdrop-filter: var(--font-size-l); */
+    /* backdrop-filter: blur(20px); */
+    /* filter: blur(1px); */
+
   }
 
   .bodyImages {

@@ -5,20 +5,23 @@ const buttons = ["ALL", "SHIRT", "T-SHIRT", "PANT", "SLEEVELESS", "OTHERS"];
 
 export default function Men() {
     const [selectedCategory, setSelectedCategory] = useState("ALL");
+    const handleReset = () => {
+        setSelectedCategory("ALL");
+    };
 
     return (
         <>
             <div className='bg-dark text-white mensHeader'>
                 <h6>MEN'S COLLECTION</h6>
-                <h2 className='text-end'>UP TO 50% OFF TRENDY MEN'S WEAR</h2>
+                <h4 className='text-end'><b> UP TO 50% OFF <br /> TRENDY MEN'S WEAR</b></h4>
                 <button className='learnMoremodern'>EXPLORE NOW</button>
             </div>
             <div className='container-fluid mens-list 100vw'>
                 <div className=' col-xl-2  my-3'>
-                    <h6>TYPES OF SAREES</h6>
+                    <h6>MEN'S CATEGORY</h6>
                     <div className='buttons-menu gap-2 my-3'>
                         {buttons.map((cat) => (
-                            <button key={cat} className={`ctegory-btn catBn ${selectedCategory === cat ? "active" : ""}`}
+                            <button key={cat} className={`ctegory-btn btn btn-outline-warning catBn ${selectedCategory === cat ? "active" : ""}`}
                                 onClick={() => setSelectedCategory(cat)}>
                                 {cat}
                             </button>
@@ -30,9 +33,9 @@ export default function Men() {
                     <h6>COLORS</h6>
                     <p>All Colors</p>
                 </div>
-            100vw     <div className=' col-xl-10   '>
+                <div className=' col-xl-10   '>
 
-                    <Catagory2 category={selectedCategory} />
+                    <Catagory2 category={selectedCategory} onReset={handleReset} />
                 </div>
             </div>
         </>

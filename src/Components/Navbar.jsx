@@ -11,8 +11,9 @@ export default function Navbar() {
         return location.pathname === path ? 'active' : ''
     }
     const clickOut = (e) => {
-        // document.body.classList.remove('show-mobile-menu');
-        setIsMenuOpen(false)
+        document.body.classList.remove('show-mobile-menu');
+        // setIsMenuOpen(false)
+        setIsBtn(isMenuOpen)
     }
     const openBtn = () => {
         document.body.classList.toggle("show-mobile-menu");
@@ -25,18 +26,20 @@ export default function Navbar() {
     }, [location])
 
     useEffect(() => {
-        if (!isMenuOpen) return
+        if (!isBtn) return
 
         const handleClickOutside = (event) => {
             if (!event.target.closest('.contUl')) {
-                setIsMenuOpen(false)
+                // setIsMenuOpen(false)
+                 document.body.classList.remove('show-mobile-menu');
+                setIsBtn(false)
                 console.log("click out side ...")
             }
         }
 
         document.addEventListener('click', handleClickOutside)
         return () => document.removeEventListener('click', handleClickOutside)
-    }, [isMenuOpen])
+    }, [isBtn])
 
 
     useEffect(() => {
@@ -98,9 +101,9 @@ export default function Navbar() {
                 {/* <img src="../src/assets/Mani shop/mani-textile-logo-C.png" alt="" /> */}
 
 
-                <div className='contUl'>
+                <div className='contUl d-flex align-items-center'>
                     {/* <nav className='navbar'> */}
-                    <nav className={`navbar d-sm-flex d-md-none d-lg-flex `} id="idToggle">
+                    <nav className={`navbar d-sm-flex d-md-flex d-lg-flex `} id="idToggle">
                         {/* <ul className={`nav text-black nav-menu ${isMenuOpen ? 'active' : ''}`}> */}
                         {/* <ul className={`nav text-black nav-menu ${isMenuOpen ? 'active' : ''}`}>
                             <div className='contImg my-4'></div>
@@ -115,7 +118,7 @@ export default function Navbar() {
                         </ul> */}
                         {/* <ul className='nav text-black ' id=''> */}
                         <ul className={`nav text-black nav-menu ${isMenuOpen ? 'active' : ''}`}>
-                            <ul className='nav d-s-none d-md-none d-lg-none'>
+                            <ul className='nav d-sm-flex d-md-flex d-lg-none'>
                                 <div className='contImg my-4'></div>
                                 <li className='nav-item border'>
                                     <Link className='items' onClick={clickOut} >Login</Link>

@@ -4,7 +4,7 @@ import '../App.css'
 import Catagory2 from './Catagory2';
 const categories = ["ALL", "SILK SAREE", "KIDS + MENS", "CHUDIDHAR", "KURTHI", "COAT SUITS"];
 export default function CatagoryList() {
- const [selectedCategory, setSelectedCategory] = useState("ALL");
+    const [selectedCategory, setSelectedCategory] = useState("ALL");
     return (
         <div className="app-container">
             <h6 className='text-center text-success'>NEW ARRIVALS</h6>
@@ -22,7 +22,6 @@ export default function CatagoryList() {
                     </button>
                 ))}
             </div>
-
             <Catagory2 category={selectedCategory} />
         </div>
     )

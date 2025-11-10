@@ -4,6 +4,9 @@ const buttons = ["ALL", "FROCK", "T-SHIRT", "SHIRT", "SHORTS", "JEANS", "KURTA",
 
 export default function Kids() {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
+   const handleReset = () => {
+    setSelectedCategory("ALL");
+  };
   return (
     <div>
       <div className='bg-dark text-white mensHeader'>
@@ -13,10 +16,10 @@ export default function Kids() {
       </div>
       <div className='container-fluid mens-list'>
         <div className='col-xl-2 my-3'>
-          <h6>TYPES OF SAREES</h6>
+          <h6>PRODUCT TYPES</h6>
           <div className='buttons-menu gap-2 my-3'>
             {buttons.map((cat) => (
-              <button key={cat} className={`ctegory-btn catBn ${selectedCategory === cat ? "active" : ""}`}
+              <button key={cat} className={`category-bt btn btn-outline-warning catBn ${selectedCategory === cat ? "active" : ""}`}
                 onClick={() => setSelectedCategory(cat)}>
                 {cat}
               </button>
@@ -29,8 +32,20 @@ export default function Kids() {
           <p>All Colors</p>
         </div>
         <div className='col-xl-10'>
+          {/* 
+          {selectedCategory ? (
 
-          <Catagory2 category={selectedCategory} />
+            <div className=''>
+              <p>No Product match your filters</p>
+              <button type='reset'>Reset Filters</button>
+            </div>) : ( */}
+          {/* {selectedCategory ? } */}
+          {/* {selectedCategory.length !== 0 ? */}
+            <Catagory2 category={selectedCategory} onReset={handleReset}/>
+            {/* : (<div> <p>No Products match your filters</p>
+              <button onClick={handleReset}>Reset Filters</button>
+            </div>)
+          } */}
         </div>
       </div>
 

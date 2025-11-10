@@ -4,20 +4,22 @@ const buttons = ["ALL", "COTTON", "SILK SAREE", "KANJIPURAM", "PATTU", "SEMI BAN
 
 export default function Women() {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
-
+  const handleReset = () => {
+    setSelectedCategory("ALL");
+  };
   return (
     <div>
       <div className='bg-dark text-white mensHeader'>
         <h6>DONT'T MISS</h6>
-        <h2 className='text-end'>UP TO 70% BEST SILK SAREES</h2>
+        <h4 className='text-end'><b> UP TO 70% <br /> BEST SILK SAREES</b></h4>
         <button className='learnMoremodern'>EXPLORE NOW</button>
       </div>
-      <div className='container d-flex mens-list'>
-        <div className=' col-xl-2 bg-dark my-3'>
+      <div className='container-fluid d-flex mens-list'>
+        <div className=' col-xl-2 my-3'>
           <h6>TYPES OF SAREES</h6>
           <div className='buttons-menu gap-2 my-3'>
             {buttons.map((cat) => (
-              <button key={cat} className={`ctegory-btn catBn ${selectedCategory === cat ? "active" : ""}`}
+              <button key={cat} className={`ctegory-btn btn btn-outline-warning catBn ${selectedCategory === cat ? "active" : ""}`}
                 onClick={() => setSelectedCategory(cat)}>
                 {cat}
               </button>
@@ -31,7 +33,7 @@ export default function Women() {
         </div>
         <div className=' col-xl-10'>
 
-          <Catagory2 category={selectedCategory} />
+        <Catagory2 category={selectedCategory} onReset={handleReset}/>
         </div>
       </div>
     </div>
