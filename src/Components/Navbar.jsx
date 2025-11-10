@@ -4,14 +4,22 @@ import '../App.css';
 import { Link, useLocation } from 'react-router-dom'
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isBtn,setIsBtn]=useState(false)
     const location = useLocation();
-    // const toggleMenu = () => {
-    //     setIsMenuOpen(!isMenuOpen)
-    // }
 
-    // const closeMenu = () => {
-    //     setIsMenuOpen(false)
-    // }
+    const isActive = (path) => {
+        return location.pathname === path ? 'active' : ''
+    }
+    const clickOut = (e) => {
+        // document.body.classList.remove('show-mobile-menu');
+        setIsMenuOpen(false)
+    }
+    const openBtn = () => {
+        document.body.classList.toggle("show-mobile-menu");
+        // setIsMenuOpen(!isMenuOpen)
+        setIsBtn(!isBtn)
+        console.log("open btn clicked...")
+    }
     useEffect(() => {
         setIsMenuOpen(false)
     }, [location])
@@ -30,18 +38,7 @@ export default function Navbar() {
         return () => document.removeEventListener('click', handleClickOutside)
     }, [isMenuOpen])
 
-    const isActive = (path) => {
-        return location.pathname === path ? 'active' : ''
-    }
-    const clickOut = (e) => {
-        document.body.classList.remove('show-mobile-menu');
-        setIsMenuOpen(false)
-        // console.log(e.target.closest('.contUl'));
-    }
-    const openBtn = () => {
-        document.body.classList.toggle("show-mobile-menu");
-        setIsMenuOpen(!isMenuOpen)
-    }
+
     useEffect(() => {
         const menuOpenButton = document.getElementById("menu-open-button"); // no '#'
         const menuClose = document.getElementById("menu-close-button");
@@ -85,7 +82,7 @@ export default function Navbar() {
 
         <div className='navMenu'>
             {/* <div className='navs'> */}
-            <nav className='navbar navbar-exad-sm border  line '>
+            <nav className='navbar  border  line '>
                 <ul className='nav'>
                     <li className='nav-list border'>CONTACT US:9600184966</li>
                     <li className='nav-list border'>EMAIL:MANITEXTILESTHEGRANDSTORE@GMAIL.COM</li>
@@ -99,61 +96,76 @@ export default function Navbar() {
             <nav className='container-fluid cont border px-5'>
                 <div className='contImg'></div>
                 {/* <img src="../src/assets/Mani shop/mani-textile-logo-C.png" alt="" /> */}
-                <div className='contUl'>
-                    <ul className='nav'>
-                        <div className='contImg my-4'></div>
-                        <li className='nav-item border'>
-                            <Link className='items' onClick={clickOut} >Login</Link>
 
-                            {/* LOGIN OR REGISTER */}
-                        </li>
-                        <li className='nav-item border'>
-                            <Link className='items' onClick={clickOut}>Register</Link>
-                        </li>
-                        {/* <li className='nav-item border'>
-                            <Link className='items'>
-                                YOUR BAG <span className='batch'>0</span>
-                            </Link></li> */}
-                    </ul>
-                    {/* <ul className='nav text-black ' id=''> */}
-                        <ul className={ `nav text-black nav-men ${isMenuOpen ? 'active' : ''}`}>
-                        <li className="nav-item">
-                            <Link
-                                 to={'/'} className='items' onClick={clickOut}
-                            //   id='link' className='items' onClick={clickOut}
-                            //  className='' onClick={clickOut} 
-                            >HOME</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className={`items ${isActive('/men')}`} onClick={clickOut} to={'/men'}>MEN</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className={`items ${isActive('/women')}`} onClick={clickOut} to={'/women'}>WOMEN</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className={`items ${isActive('/kids')}`} onClick={clickOut} to={'/kids'}>KIDS</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className='items' onClick={clickOut} to={'/cart'}>CART</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className='items' onClick={clickOut} to={'/contact'}>CONTANT</Link>
-                        </li>
-                    </ul>
+
+                <div className='contUl'>
+                    {/* <nav className='navbar'> */}
+                    <nav className={`navbar d-sm-flex d-md-none d-lg-flex `} id="idToggle">
+                        {/* <ul className={`nav text-black nav-menu ${isMenuOpen ? 'active' : ''}`}> */}
+                        {/* <ul className={`nav text-black nav-menu ${isMenuOpen ? 'active' : ''}`}>
+                            <div className='contImg my-4'></div>
+                            <li className='nav-item border'>
+                                <Link className='items' onClick={clickOut} >Login</Link>
+
+                            </li>
+                            <li className='nav-item border'>
+                                <Link className='items' onClick={clickOut}>Register</Link>
+                            </li>
+
+                        </ul> */}
+                        {/* <ul className='nav text-black ' id=''> */}
+                        <ul className={`nav text-black nav-menu ${isMenuOpen ? 'active' : ''}`}>
+                            <ul className='nav d-s-none d-md-none d-lg-none'>
+                                <div className='contImg my-4'></div>
+                                <li className='nav-item border'>
+                                    <Link className='items' onClick={clickOut} >Login</Link>
+
+                                </li>
+                                <li className='nav-item border'>
+                                    <Link className='items' onClick={clickOut}>Register</Link>
+                                </li>
+                            </ul>
+                            <li className="nav-item">
+                                <Link
+                                    to={'/'} className={`items ${isActive('/')}`} onClick={clickOut}
+                                //   id='link' className='items' onClick={clickOut}
+                                //  className='' onClick={clickOut} 
+                                >HOME</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className={`items ${isActive('/men')}`} onClick={clickOut} to={'/men'}>MEN</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className={`items ${isActive('/women')}`} onClick={clickOut} to={'/women'}>WOMEN</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className={`items ${isActive('/kids')}`} onClick={clickOut} to={'/kids'}>KIDS</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className={`items ${isActive('/cart')}`} onClick={clickOut} to={'/cart'}>CART</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className={`items ${isActive('/contact')}`} onClick={clickOut} to={'/contact'}>CONTANT</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button className="menu-toggle d-sm-flex d-md-flex d-lg-none" aria-label="Toggle menu"
+                        // id='menu-open-button'       className='fa f-bars mx-3 p-3' 
+                        onClick={openBtn}
+                    >
+                        <span style={{
+                            transform: isBtn ? `rotate(45deg) translate(5px, 5px)` : `none`
+                        }}></span>
+                        <span style={{
+                            opacity: isBtn ? 0 : 1
+                        }}></span>
+                        <span style={{
+                            transform: isBtn ? 'rotate(-45deg) translate(7px, -6px)' : 'none'
+                        }}></span>
+                    </button>
                 </div>
-                <button className="menu-toggle"  aria-label="Toggle menu"
-                    // id='menu-open-button' className='fa f-bars mx-3 p-3' 
-                    onClick={openBtn} >
-                    <span style={{
-                        transform: isMenuOpen ? `rotate(45deg) translate(5px, 5px)` : `none`
-                    }}></span>
-                    <span style={{
-                        opacity: isMenuOpen ? 0 : 1
-                    }}></span>
-                    <span style={{
-                        transform: isMenuOpen ? 'rotate(-45deg) translate(7px, -6px)' : 'none'
-                    }}></span>
-                </button>
+
+
             </nav >
             {/* <button id='menu-open-button' className='fa fa-bars mx-3 p-3'></button> */}
             {/* </div> */}

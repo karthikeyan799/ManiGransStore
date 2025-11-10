@@ -41,7 +41,7 @@
 }
 
 .contUl .nav:nth-child(1) {
-  display: none;
+  /* display: none; */
 }
 
 .menu-toggle {
@@ -1021,11 +1021,25 @@
 .bodyContent p {
   font-size: large;
 }
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+
+.navbar {
+  position: relative;
 }
+
+.nav-menu {
+  display: flex;
+  /* list-style: none; */
+  /* gap: 2rem; */
+}
+
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #FFF;
+  /* background-color: rgba(255,255,255,0.1); */
+  background-color: #f5b50a;
+}
+
 .bodyContainer {
 
   width: 80%;
@@ -1300,7 +1314,7 @@ a {
 
 /* Media query Mobile resolution */
 /* @media screen and (max-width:642px) { */
-@media screen and (max-width:600px) {
+@media screen and (max-width:1000px) {
 
   .footer .copy {
     padding: 30px;
@@ -1721,26 +1735,36 @@ a {
     display: inline;
   }
 
-  .navMenu .cont .contUl {
-    /* display: block; */
+  /* .navMenu .cont .contUl { */
+  .navMenu .cont .contUl .navbar .nav-menu{ 
+
     position: fixed;
     left: -300px;
-    top: 0;
+    top: 0px;
+    /* right: 0; */
     /* right: -300px; */
     /* left: 0; */
     width: 250px;
     height: 100%;
     z-index: 100;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: start;
-    /* align-items: center; */
-    /* padding-top: 100px; */
     background-color: white;
     transition: left 0.8s ease;
   }
 
-  body.show-mobile-menu .navMenu .cont .contUl {
+  .navbar .nav-menu.active {
+    /* height: 100px; */
+    /* max-height: 300px; */
+    left: 0;
+    
+
+    color: red;
+    background-color: blue;
+  }
+
+  body.show-mobile-menu .navMenu .cont .contUl .nav-menu {
     left: 0;
     /* right: 0; */
     /* position: fixed; */
@@ -1750,7 +1774,7 @@ a {
   .nav .nav-item,
   .nav .nav-list {
     width: 100%;
-    padding: 3px;
+    /* padding: 3px; */
     border: 1px solid whitesmoke;
     /* background-color: #f5b50a; */
   }
@@ -1770,7 +1794,7 @@ a {
     /* background-color: aqua; */
   }
 
-  .nav-menu {
+  /* .nav-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -1778,7 +1802,7 @@ a {
     background-color: #8B4513;
     flex-direction: column;
     gap: 0;
-    /* height: 100%; */
+    
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
@@ -1787,7 +1811,7 @@ a {
 
   .nav-menu.active {
     max-height: 300px;
-  }
+  } */
 
 
   .navMenu .nav .nav-link {
