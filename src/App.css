@@ -2091,6 +2091,46 @@ a {
     /* align-items: ce; */
     padding: 20px;
     /* border: none; */
+
+    position: unset;
+    /* display: none; */
+  }
+
+  .cart:nth-child(2) {
+    position: unset;
+    height: 300px;
+    padding: 20px;
+    /* display: none; */
+  }
+
+}
+
+/* small device  landscope phonr sm */
+@media screen and (max-width:576) {
+  .cart:nth-child(1) {
+    border-right: none;
+    height: 300px;
+    padding: 20px;
+    position: unset;
+    /* display: none; */
+  }
+
+  .cart:nth-child(3) {
+
+    border-bottom: 1px solid silver;
+    /* position: relative; */
+    /* display: none; */
+    height: 300px;
+    padding: 20px;
+  }
+
+  .cart1:nth-child(4) {
+    height: 300px;
+    /* align-items: ce; */
+    padding: 20px;
+    /* border: none; */
+
+    border-bottom: 1px solid silver;
     position: unset;
     /* display: none; */
   }
@@ -2102,9 +2142,6 @@ a {
     /* display: none; */
   }
 }
-
-/* small device  landscope phonr sm */
-@media screen and (max-width:576) {}
 
 @media screen and (max-width:992px) {
   .mod {
