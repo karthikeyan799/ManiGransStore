@@ -6,7 +6,7 @@ export default function Body() {
         <>
             <div className='container-fluidd body py3 '>
                 <div className='bodyContainer d-flex text-white'>
-                    <div className='col-12 col-sm-12 px-sm-5 col-md-6 bodyContent'>
+                    <div className='col-12 col-sm-12 px-5 col-md-6 bodyContent'>
                         <h6>MANI TEXTILE NEW EDITION</h6>
                         <h2 className='borderSilk py3'>BORDER SILK SAREE</h2>
                         {/* <hr className='bg-info' /> */}
@@ -21,8 +21,8 @@ export default function Body() {
 
                         <div className='silkBtn'>
                             <h2 className='col'>BEST PRICE: ₹1795.00</h2>
-                            <button className='col btn btn-light learnMoremodern'>LEARN MORE</button>
-                            <button className='col btn btn-dark learnMoremodern'>ADD TO CART</button>
+                            <button className='col btn learnMoremodern bg-white text-black'>LEARN MORE</button>
+                            <button className='col btn learnMoremodern bg-black'>ADD TO CART</button>
                         </div>
 
                     </div>

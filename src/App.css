@@ -516,16 +516,13 @@
   color: rgb(232, 227, 220);
   /* font-weight: 600; */
 }
-
 .collection .modernButtons .learnMoremodern {
   padding: 13px 40px;
   border-radius: 30px;
-  margin-right: 25px;
+  /* margin-right: 25px; */
   color: white;
-  /* font-weight: 600; */
   border: none;
   font-size: medium;
-  /* width: 200px; */
 }
 
 .paradiv p {
@@ -1000,7 +997,7 @@
   background-color: rgb(215, 170, 72);
   padding: 7px 20px;
   border-radius: 30px;
-  margin-right: 25px;
+  /* margin-right: 25px; */
   color: white;
   /* font-weight: 600; */
   border: none;
@@ -1478,13 +1475,15 @@ a {
   }
 
   .modernButtons {
+  
     display: flex;
+     
   }
 
   .collection .modernButtons .learnMoremodern {
-    padding: 8px 20px;
-    border: none;
-    font-size: medium;
+    /* padding: 8px 20px; */
+    /* border: none; */
+    /* font-size: medium; */
   }
 
 
@@ -1648,6 +1647,7 @@ a {
     /* margin: -20px; */
     /* margin-left: 90px; */
   }
+  
 
   /* :root {
     --font-size-m: 1rem;

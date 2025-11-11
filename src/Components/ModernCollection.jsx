@@ -3,10 +3,10 @@ import '../App.css';
 export default function ModernCollection() {
     return (
         <div className='modern'>
-            <div className='d-block copy1 mo d-md-flex  justify-content-center align-items-center justify-content-sm-center align-item-sm-center text-white my-5 px-5 gap-2'>
+            <div className='d-block co mo d-md-flex  justify-content-center  justify-content-sm-center align-item-sm-center text-white my-5 px-5 mx-4 gap-2'>
 
-                <div className='col col-sm12  col-md12 modernColl text-center d-flex'>
-                    <div className='col-6 col-md-5 modernKids '>
+                <div className='col col-sm12  col-md12 modernColl text-center d-flex col-md-6 '>
+                    <div className='col-6 col-md-5 modernKids bg-d'>
                         {/* <div className='modernKidsImg'></div> */}
                         {/* <img src=".././src/assets/Mani shop/kutchild.png" alt="" /> */}
                     </div>
@@ -20,7 +20,7 @@ export default function ModernCollection() {
                     </div>
                 </div>
 
-                <div className='col col-sm12 col-md2  collection'>
+                <div className='col col-sm12 col-md-7  collection'>
                     <h6><b> MODERN COLLECTION</b></h6>
                     <h1>FOR CHILDRENS</h1>
                     <p className='dis'>Discover our Modern Collection for Children--a curated range of stylish,comfortable, and trend-forword clothing and accessories designed for today's kids.</p>
@@ -57,8 +57,8 @@ export default function ModernCollection() {
                     </div>
                     <h5 className='text-warning'>BEST PRICE: <i className='bi bi-currency-rupee '></i>195.00</h5>
                     <div className='modernButtons'>
-                        <button className='learnMoremodern bg-white text-black'>LEARN MORE</button>
-                        <button className='learnMoremodern bg-dark'>ADD TO CART</button>
+                        <button className='learnMoreDiscount bg-white text-black'>LEARN MORE</button>
+                        <button className='learnMoreDiscount mt bg-dark'>ADD TO CART</button>
                     </div>
                 </div>
             </div>

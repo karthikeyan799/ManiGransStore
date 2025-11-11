@@ -38,7 +38,7 @@ export default function FastSelling() {
                     <h6><b> ETHNIC WEAR</b></h6>
                     <h5><i className='bi bi-currency-rupee'></i>410</h5>
                 </div>
-                <div className='col-xl-2 col-md-4 col-lg-2 col-sm-3 col cart cart1 d-none d-sm-none d-md-flex'>
+                <div className='col-xl-2 col-md-4  col-lg-2 col-sm-3 col cart cart1 d-none d-sm-none d-md-flex'>
                     <div className='img5  my-4'></div>
                     {/* <img className='my-4' src="../src/assets/Mani shop/anarkali1.png" alt="" /> */}
                     <h6>READYMADES</h6>
