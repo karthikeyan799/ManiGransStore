@@ -2106,7 +2106,7 @@ a {
 }
 
 /* small device  landscope phonr sm */
-@media screen and (max-width:576) {
+@media screen and (max-width:576px) {
   .cart:nth-child(1) {
     border-right: none;
     height: 300px;
