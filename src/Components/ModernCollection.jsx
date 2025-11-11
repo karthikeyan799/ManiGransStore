@@ -3,14 +3,14 @@ import '../App.css';
 export default function ModernCollection() {
     return (
         <div className='modern'>
-            <div className='d-flex copy1 mod text-white my-5 gap-2'>
+            <div className='d-block copy1 mo d-md-flex justify-content-center align-items-center justify-content-sm-center align-item-sm-center text-white my-5 px-5 gap2'>
 
-                <div className='col modernColl text-center d-flex'>
-                    <div className='col-6 modernKids'>
+                <div className='col col-sm12  col-md12 modernColl text-center d-flex'>
+                    <div className='col-6 col-md-5 modernKids '>
                         {/* <div className='modernKidsImg'></div> */}
                         {/* <img src=".././src/assets/Mani shop/kutchild.png" alt="" /> */}
                     </div>
-                    <div className='col-4 modernChild'>
+                    <div className='col-4 col-md12 modernChild '>
                         <div className='modernChildImg'></div>
                         <div className='modernChildImg'></div>
                         <div className='modernChildImg'></div>
@@ -20,7 +20,7 @@ export default function ModernCollection() {
                     </div>
                 </div>
 
-                <div className='col collection'>
+                <div className='col col-sm12 col-md2  collection'>
                     <h6><b> MODERN COLLECTION</b></h6>
                     <h1>FOR CHILDRENS</h1>
                     <p className='dis'>Discover our Modern Collection for Children--a curated range of stylish,comfortable, and trend-forword clothing and accessories designed for today's kids.</p>

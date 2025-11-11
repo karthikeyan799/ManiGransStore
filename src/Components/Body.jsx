@@ -4,9 +4,9 @@ import header1 from '../assets/Mani shop/header1.png'
 export default function Body() {
     return (
         <>
-            <div className='container-fluidd bg-danger body py4 '>
+            <div className='container-fluidd body py3 '>
                 <div className='bodyContainer d-flex text-white'>
-                    <div className='col-4 bodyContent'>
+                    <div className='col-4 col-sm-12 px-sm-5 col-md-6 bodyContent'>
                         <h6>MANI TEXTILE NEW EDITION</h6>
                         <h2 className='borderSilk py3'>BORDER SILK SAREE</h2>
                         {/* <hr className='bg-info' /> */}
@@ -26,9 +26,10 @@ export default function Body() {
                         </div>
 
                     </div>
-                    <div className='col-7 headerImg '>
+                    <div className='col-8 col-sm6 col-md-6 headerImg  d-md-flex'>
+                        {/* <div className=' '></div> */}
                         {/* <img src={header1} className='headImg1' alt="" /> */}
-                        {/* <img src="../src/assets/Mani shop/header1.png" alt="" /> */}
+                        {/* <img src="../src/assets/Mani shop/header1.png" className='position-absoute right-3 d-md-flx w75 h-100 justify-content-md-start' alt="" /> */}
                     </div>
                 </div>
             </div>
@@ -91,7 +92,7 @@ export default function Body() {
                 </div>
                 {/* </div> */}
                 {/* <div> */}
-                <div className='imgHover border col' >
+                <div className='imgHover border col ' >
                     <div className='imgBox3 imgBox'>
 
                     </div>
@@ -121,7 +122,7 @@ export default function Body() {
                 </div>
                 {/* </div> */}
                 {/* <div> */}
-                <div className='imgHover border col' >
+                <div className='imgHover border col ' >
                     <div className='imgBox4 imgBox'>
 
                     </div>

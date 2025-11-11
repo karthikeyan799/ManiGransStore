@@ -8,7 +8,7 @@ export default function LuxuryCollection() {
             <h1 className='text-center title'>CHOOSE OUR  LUXURIOUS COLLECTIONS</h1>
             <hr />
             <div className=' d-flex luxury my-5 '>
-                <div className='col samudrika'>
+                <div className='col-12 samudrika col-sm-12 col-md-12 col-lg-6'>
                     <div className='samudrikaImg'></div>
                     {/* <img src="../src/assets/Mani shop/samu.jpeg" alt="" /> */}
                     <div className='samudrikaContent'>
@@ -18,8 +18,8 @@ export default function LuxuryCollection() {
                         <button className='learnMoreDiscount px-4'>LEARN MORE</button>
                     </div>
                 </div>
-                <div className='col bg-dange silkDiv'>
-                    <div className='silk col text-center'>
+                <div className='col-12  silkDiv col-sm-12 col-md-12 col-lg-6 '>
+                    <div className='silk col-6 col-sm-6 text-center col-md-4 col-lg-6'>
                         <div className='silkImg1'></div>
                         {/* <img src="../src/assets/Mani shop/elite1.png" alt="image1" /> */}
                         <h5 className='mt-4'> <b> ELITE <span className='text-warning'>SILK</span></b> SAREE</h5>
@@ -28,7 +28,7 @@ export default function LuxuryCollection() {
                         {/* <h5><i className='bi bi-currency-rupee'></i>7,500,00</h5> */}
                         <button className='learnMoreDiscount'>LEARN MORE</button>
                     </div>
-                    <div className='silk col text-center'>
+                    <div className='silk col-6 col-sm-6 text-center col-md-4 col-lg-6'>
                         <div className='silkImg2'></div>
                         {/* <img src="../src/assets/Mani shop/parampara1.png" alt="image2" /> */}
                         <h5 className='mt-4'><b> PARAMPARA <span className='text-warning'>SILK</span></b></h5>

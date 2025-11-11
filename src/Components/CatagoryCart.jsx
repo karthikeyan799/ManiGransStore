@@ -4,7 +4,7 @@ export default function CatagoryCart({ product }) {
   return (
     <>
 
-      <div className="product-card border">
+      <div className="product-card my-4 border">
         {product.bestPrice && <div className="best-price">BEST PRICE</div>}
         <img src={product.image} alt={product.name} className="product-img" />
         <p className="category">{product.category}</p>

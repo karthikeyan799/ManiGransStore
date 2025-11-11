@@ -75,11 +75,13 @@ body {
 
 /* Product Grid */
 .product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
     /* gap: 25px; */
     /* align-items: center; */
-    justify-items: center;
+    /* justify-content: space-evenly; */
 }
 
 .product-card {

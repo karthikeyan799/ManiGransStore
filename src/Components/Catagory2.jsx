@@ -69,7 +69,7 @@ export default function Catagory2({ category ,onReset }) {
     category === prod ? products
       : products.filter((p) => p.category === category);
   return (
-    <div className="product-list ">
+    <div className="product-list my-4 d-flex flex-wrap justify-content-evenly">
 
       {filteredProducts.length !== 0 ? filteredProducts.map((item) => (
         <CatagoryCart key={item.id} product={item} />
