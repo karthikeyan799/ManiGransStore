@@ -56,7 +56,7 @@ export default function ModernCollection() {
                         </div>
                     </div>
                     <h5 className='text-warning'>BEST PRICE: <i className='bi bi-currency-rupee '></i>195.00</h5>
-                    <div className='modernButtons'>
+                    <div className='modernButtons d-flex gap-2 flex-wrap justify-content-center'>
                         <button className='learnMoreDiscount bg-white text-black'>LEARN MORE</button>
                         <button className='learnMoreDiscount mt bg-dark'>ADD TO CART</button>
                     </div>

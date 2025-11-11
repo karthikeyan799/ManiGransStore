@@ -40,7 +40,7 @@ export default function Discount() {
                         </div>
                     </div>
                     <p className='py-3 para'>Discover elegance at half trhe price! Shop our exclusive collection of premium silk dhotis and sarees now available at 50% OFF.</p>
-                    <div className='d-flex gap-2 flex-wrap'>
+                    <div className='d-flex gap-2 flex-wrap justify-content-center'>
                         <button className='learnMoreDiscount '>LEARN MORE</button>
                         <button className='addToCartDiscount  '>ADD TO CART</button>
                     </div>

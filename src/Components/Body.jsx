@@ -21,18 +21,20 @@ export default function Body() {
 
                         <div className='silkBtn'>
                             <h2 className='col'>BEST PRICE: ₹1795.00</h2>
+                            <div className='d-flex gap-2 flex-wrap justify-content-center'>
                             <button className='col btn learnMoremodern bg-white text-black'>LEARN MORE</button>
                             <button className='col btn learnMoremodern bg-black'>ADD TO CART</button>
                         </div>
+                    </div>
 
-                    </div>
-                    <div className=' col-sm6 col-md-6 headerImg  d-md-flex'>
-                        {/* <div className=' '></div> */}
-                        {/* <img src={header1} className='headImg1' alt="" /> */}
-                        {/* <img src="../src/assets/Mani shop/header1.png" className='position-absoute right-3 d-md-flx w75 h-100 justify-content-md-start' alt="" /> */}
-                    </div>
+                </div>
+                <div className=' col-sm6 col-md-6 headerImg  d-md-flex'>
+                    {/* <div className=' '></div> */}
+                    {/* <img src={header1} className='headImg1' alt="" /> */}
+                    {/* <img src="../src/assets/Mani shop/header1.png" className='position-absoute right-3 d-md-flx w75 h-100 justify-content-md-start' alt="" /> */}
                 </div>
             </div>
+        </div >
             <div className='bodyImages '>
                 <div className='imgHover border col ' >
                     <div className='imgBox1 imgBox'>
