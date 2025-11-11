@@ -9,8 +9,8 @@ export default function Discount() {
             <h1 className='text-center title'>50% DISCOUNT FOR LATEST TRENDS</h1>
             <hr className='hr'
             />
-            <div className='d-flex gap-4 flex-row disContainer discountBody '>
-                <div className='col-xl-5  discountImg position-relative col-md-6 col-lg-5'>
+            <div className='d-flex gap4 flex-md-row disContainer discountBody gap-md-4'>
+                <div className='col-xl-5 col-12 discountImg position-relative col-md-6 col-lg-5'>
                     {/* <div className='discountImg1'></div>
                     <div className='discountImage'></div> */}
                     <img className='discountImg1 h75 w-100 '
@@ -18,10 +18,10 @@ export default function Discount() {
                         src={img1} alt="" />
                     <img src={img2} className='discountImage ms-md-0' alt="" />
                 </div>
-                <div className='col-xl-6 discountCon py-4 col-md-6 col-lg6 px-5'>
+                <div className='col-xl-6 col-12 discountCon py-4 col-md-6 col-lg6 px-5'>
                     <h5>  PURE SILK SAREE <span>+</span> SILK DHOTIS <span>+</span> FREE DELIVERY</h5>
                     <h5><b>BEST PRICE:</b><span className=''><i className='bi bi-currency-rupee'></i>2,500.00</span></h5>
-                    <div className='d-flex py-3 gap-3 dates'>
+                    <div className='d-flex py-3 gap-1 gap-md-3 dates'>
                         <div className='d-flex date' >
                             <h5>20</h5>
                             <p>DAYS</p>
@@ -39,7 +39,7 @@ export default function Discount() {
                             <p>SEC</p>
                         </div>
                     </div>
-                    <p className='py-3 px-1 para'>Discover elegance at half trhe price! Shop our exclusive collection of premium silk dhotis and sarees now available at 50% OFF.</p>
+                    <p className='py-3 ara'>Discover elegance at half trhe price! Shop our exclusive collection of premium silk dhotis and sarees now available at 50% OFF.</p>
                     <div className=''>
                         <button className='learnMoreDiscount'>LEARN MORE</button>
                         <button className='addToCartDiscount'>ADD TO CART</button>

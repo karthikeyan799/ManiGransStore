@@ -6,7 +6,7 @@ export default function Body() {
         <>
             <div className='container-fluidd body py3 '>
                 <div className='bodyContainer d-flex text-white'>
-                    <div className='col-4 col-sm-12 px-sm-5 col-md-6 bodyContent'>
+                    <div className='col-12 col-sm-12 px-sm-5 col-md-6 bodyContent'>
                         <h6>MANI TEXTILE NEW EDITION</h6>
                         <h2 className='borderSilk py3'>BORDER SILK SAREE</h2>
                         {/* <hr className='bg-info' /> */}
@@ -26,7 +26,7 @@ export default function Body() {
                         </div>
 
                     </div>
-                    <div className='col-8 col-sm6 col-md-6 headerImg  d-md-flex'>
+                    <div className=' col-sm6 col-md-6 headerImg  d-md-flex'>
                         {/* <div className=' '></div> */}
                         {/* <img src={header1} className='headImg1' alt="" /> */}
                         {/* <img src="../src/assets/Mani shop/header1.png" className='position-absoute right-3 d-md-flx w75 h-100 justify-content-md-start' alt="" /> */}

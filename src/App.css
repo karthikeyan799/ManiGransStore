@@ -324,28 +324,32 @@
   display: flex;
 
   /* flex-wrap: wrap; */
+  /* justify-content: center; */
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 
 .samudrika {
   /* width: 600px;
   height: 600px; */
-  height: 500px;
+  /* height: 500px; */
+  /* margin: 20px; */
+  /* width: 600px; */
   position: relative;
 }
 
 
 .samudrika .samudrikaImg {
-  /* max-width: 585px; */
+  /* width: 560px; */
   height: 500px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   background-image: url("../src/assets/Mani shop/samu.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
   /* width: 100%; */
-  background-position: center center;
+  /* background-position: center ; */
   /* object-fit:contain; */
 }
 
@@ -354,6 +358,7 @@
   color: white;
   position: absolute;
   bottom: 0px;
+  /* left: 0; */
   /* left: -5px; */
 }
 
@@ -377,22 +382,26 @@
 
 .silkDiv {
   display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .silk .silkImg1 {
-  height: 350px;
-  /* width: 100%; */
-
-  /* margin: 0% 10%; */
-  background-image: url("../src/assets/Mani shop/elite1.png");
-  background-size: contain;
+  height: 380px;
+  width: 200px;
+  margin: auto;
+  background-image: url("../src/assets/Mani shop/elite1 copy.png");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 
 .silk .silkImg2 {
-  height: 350px;
-  /* width: 100%; */
-  background-image: url("../src/assets/Mani shop/parampara1.png");
-  background-size: contain;
+  height: 380px;
+  margin: auto;
+  width: 250px;
+  background-image: url("../src/assets/Mani shop/parampara1 copy.png");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 
 /* .silkDiv {
@@ -612,7 +621,6 @@
   background-image: url("../src/assets/Mani shop/anarkali1.png");
   background-size: cover;
   height: 120px;
-  background-color: #f5b50a;
   width: 100px;
 }
 
@@ -1009,7 +1017,6 @@
   width: 480px;
   /* width: 100%; */
   /* margin-left: -100px; */
-  background-color: #f5b50a;
   background-size: cover;
   /* object-fit: fill; */
 }
@@ -1497,6 +1504,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 610px;
+    /* height: 450px; */
+
+    /* background-color: #f5b50a; */
+    /* height: fit-content; */
     /* width: 100%; */
     /* display: flex; */
     /* height: 400px; */
@@ -1504,14 +1516,15 @@ a {
   }
 
   .samudrika .samudrikaImg {
-    width: 70%;
+    width: 610px;
 
     height: 500px;
     /* max-width: 770px;
     height: 385px; */
     /* height: 100%; */
     border-radius: 20px;
-
+    background-size: cover;
+    background-repeat: no-repeat;
     /* background-image: url("../src/assets/Mani shop/samu.jpeg");
     background-size: cover; */
 
@@ -1541,7 +1554,7 @@ a {
     /* background-color: #f5b50a; */
     /* width: 100%; */
     /* height: 100%; */
-      background-size: cover;
+    background-size: cover;
   }
 
   .silk .silkImg2 {
@@ -1594,11 +1607,11 @@ a {
   .discountCon button {
     /* width: 20px; */
     /* padding: ; */
-    display: inline-flex;
+    display: inline-block;
   }
 
   .dates {
-    margin: auto;
+    /* margin: auto; */
   }
 
   .bi-list {
@@ -1984,10 +1997,10 @@ a {
   }
 
   .cart {
-    width: 250px;
+    /* width: 250px; */
   }
 
-  .cart:nth-child(n+5) {
+  .cart:nth-child(n+7) {
     display: none;
   }
 
@@ -2010,13 +2023,32 @@ a {
   }
 
   .cart:nth-child(3) {
-    border: none;
+    /* border: none; */
+    position: unset;
     /* display: none; */
     height: 300px;
     padding: 20px;
   }
 
   .cart1:nth-child(4) {
+    height: 300px;
+    /* align-items: ce; */
+    padding: 20px;
+    border: none;
+
+    /* display: none; */
+  }
+
+  .cart1:nth-child(5) {
+    height: 300px;
+    /* align-items: ce; */
+    padding: 20px;
+    border: none;
+
+    /* display: none; */
+  }
+
+  .cart:nth-child(6) {
     height: 300px;
     /* align-items: ce; */
     padding: 20px;
@@ -2044,6 +2076,35 @@ a {
   }
 
 }
+
+/* medium screen MD */
+@media screen and (max-width:768px) {
+  .cart:nth-child(3) {
+    border: none;
+    position: relative;
+    /* display: none; */
+    height: 300px;
+    padding: 20px;
+  }
+
+  .cart1:nth-child(4) {
+    height: 300px;
+    /* align-items: ce; */
+    padding: 20px;
+    /* border: none; */
+    position: unset;
+    /* display: none; */
+  }
+  .cart:nth-child(2) {
+    position: unset;
+    height: 300px;
+    padding: 20px;
+    /* display: none; */
+  }
+}
+
+/* small device  landscope phonr sm */
+@media screen and (max-width:576) {}
 
 @media screen and (max-width:992px) {
   .mod {

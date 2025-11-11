@@ -3,7 +3,7 @@ import '../App.css';
 export default function ModernCollection() {
     return (
         <div className='modern'>
-            <div className='d-block copy1 mo d-md-flex justify-content-center align-items-center justify-content-sm-center align-item-sm-center text-white my-5 px-5 gap2'>
+            <div className='d-block copy1 mo d-md-flex  justify-content-center align-items-center justify-content-sm-center align-item-sm-center text-white my-5 px-5 gap-2'>
 
                 <div className='col col-sm12  col-md12 modernColl text-center d-flex'>
                     <div className='col-6 col-md-5 modernKids '>
