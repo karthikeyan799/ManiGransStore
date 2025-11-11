@@ -22,8 +22,8 @@ export default function Body() {
                         <div className='silkBtn'>
                             <h2 className='col'>BEST PRICE: ₹1795.00</h2>
                             <div className='d-block gap-2 flex-wrap justify-content-center'>
-                            <button className='col btn learnMoremodern bg-white text-black'>LEARN MORE</button>
-                            <button className='col btn learnMoremodern bg-black'>ADD TO CART</button>
+                            <button className='col btn learnMoremodern my-1 bg-white text-black'>LEARN MORE</button>
+                            <button className='col btn learnMoremodern my-1 bg-black'>ADD TO CART</button>
                         </div>
                     </div>
 

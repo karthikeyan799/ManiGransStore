@@ -64,8 +64,9 @@
 .cont .contImg {
   /* background-color: #f5b50a; */
   /* padding: 0px; */
-  width: 180px;
-  height: 50px;
+  width: 160px;
+  height: 45px;
+  /* background-color: #f5b50a; */
   margin-bottom: 10px;
   background-image: url("../src/assets/Mani shop/mani-textile-logo-C.png");
   background-size: cover;
@@ -1093,7 +1094,7 @@ hr {
 
 .silkBtn {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   /* justify-content: space-between; */
 }
 

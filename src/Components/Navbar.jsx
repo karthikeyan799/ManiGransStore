@@ -96,7 +96,7 @@ export default function Navbar() {
                     <li className='nav-list border'>YOUR BAG <span className='batch'>0</span></li>
                 </ul>
             </nav>
-            <nav className='container-fluid cont border px-5'>
+            <nav className='container-fluid cont border px-4 px-lg-5'>
                 <div className='contImg'></div>
                 {/* <img src="../src/assets/Mani shop/mani-textile-logo-C.png" alt="" /> */}
 
@@ -163,7 +163,7 @@ export default function Navbar() {
                             opacity: isBtn ? 0 : 1
                         }}></span>
                         <span style={{
-                            transform: isBtn ? 'rotate(-45deg) translate(7px, -6px)' : 'none'
+                            transform: isBtn ? 'rotate(-45deg) translate(7px, -7px)' : 'none'
                         }}></span>
                     </button>
                 </div>
