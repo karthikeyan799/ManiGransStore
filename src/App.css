@@ -464,7 +464,10 @@
 }
 
 .modern {
-  background-image: url('../src/assets/Mani shop/background-BaYQceuH.jpg');
+  /* background-image: url('../src/assets/Mani shop/background-BaYQceuH.jpg'); */
+ 
+  background-image: url('../src/assets/Mani shop/background-BaYQceu-copy.jpg');
+
   background-repeat: repeat;
   /* height: 600px; */
   display: flex;
@@ -1403,7 +1406,7 @@ a {
 
   /* -------------------------Modern collection------------------------- */
   .modern {
-    background-image: url('../src/assets/Mani shop/background-BaYQceuH.jpg');
+    /* background-image: url('../src/assets/Mani shop/background-BaYQceuH.jpg'); */
     /* background-repeat: round; */
     /* height: 1000px; */
     /* height: 700px;
