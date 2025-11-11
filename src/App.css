@@ -2118,7 +2118,7 @@ a {
   .cart:nth-child(3) {
 
     border-bottom: 1px solid silver;
-    /* position: relative; */
+    position: unset;
     /* display: none; */
     height: 300px;
     padding: 20px;
@@ -2128,9 +2128,9 @@ a {
     height: 300px;
     /* align-items: ce; */
     padding: 20px;
-    /* border: none; */
+    border: none;
 
-    border-bottom: 1px solid silver;
+    /* border-bottom: 1px solid silver; */
     position: unset;
     /* display: none; */
   }
