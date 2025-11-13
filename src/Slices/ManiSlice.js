@@ -56,14 +56,7 @@ const maniSlice = createSlice({
             // const iditemIndex = state.cartItems.filter((p) => p.id === action.payload.id);
             // state.cartItems = iditemIndex
             state.cartItems = itemIndex;
-            // state.cartItems.push(action.payload)
-            // state.mani.push(action.payload);
-            // localStorage.setItem("cartItems",JSON.stringify(state.cartItems));
-            // toast.error(`${action.payload.name} remove from cart`, {
-            //     position: "bottom-left",
-            // })
-
-        },
+            },
         decreaseCart(state, action) {
             const itemIndex = state.cartItems.findIndex(item => item.id === action.payload.id);
             // state.cartItems = itemIndex;

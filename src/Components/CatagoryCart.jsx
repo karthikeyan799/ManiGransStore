@@ -3,6 +3,8 @@ import './Catagory.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { addtoCart, fetchCart } from '../Slices/ManiSlice';
 import { useNavigate } from 'react-router-dom';
+import { products } from './Catagory2';
+import Product from '../NavList/Product';
 export default function CatagoryCart({ product }) {
 
   const dispatch = useDispatch();
@@ -13,10 +15,12 @@ export default function CatagoryCart({ product }) {
   const description = product.description;
   const id = product.id;
   const user = useSelector(state => state.mani.user);
+  const productList=product;
   const handletoAdd = () => {
     if (user) {
       dispatch(addtoCart({
-        id, image, category, name, description, price
+        product
+        // id, image, category, name, description, price
       }));
     } else {
       alert("Please Login....");
@@ -46,11 +50,12 @@ export default function CatagoryCart({ product }) {
         <h3 className="product-name">{product.name}</h3>
         <p className="product-desc">{product.description}</p>
         <p className="product-price">₹{product.price}</p>
-        {/* <button className='btn btn-success' onClick={(e) =>
+        <button className='btn btn-success' onClick={(e) =>
           handletoAdd(e)
           // dispatch(addtoCart({ id, image, category, name, description, price }))
         }>Add to cart</button>
-        <button onClick={(e) => handleParams(id)}>product</button> */}
+        <button onClick={(e) => handleParams(id)}>product</button>
+        {/* <Product carts={productList}/> */}
 
       </div>
     </>
