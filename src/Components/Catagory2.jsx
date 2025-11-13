@@ -7,7 +7,8 @@ import img2 from '../assets/Mani shop/kurta.png'
 import img3 from "../assets/Mani shop/gownkurta.png"
 import img4 from "../assets/Mani shop/pinkmaterial1.png"
 import img5 from "../assets/Mani shop/combo1.png"
-const products = [
+import Product from '../NavList/Product';
+export const products = [
   {
     id: 1,
     name: "SWAROVSKI SAREE",
@@ -16,6 +17,7 @@ const products = [
     price: 1790,
     image: img1,
     bestPrice: true,
+    cartQuantity: 0
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ const products = [
     price: 3059,
     image: img2,
     bestPrice: false,
+    cartQuantity: 0
   },
   {
     id: 3,
@@ -34,6 +37,7 @@ const products = [
     price: 3420,
     image: img3,
     bestPrice: false,
+    cartQuantity: 0
   },
   {
     id: 4,
@@ -43,6 +47,7 @@ const products = [
     price: 999,
     image: img4,
     bestPrice: true,
+    cartQuantity: 0
   },
   {
     id: 5,
@@ -52,19 +57,20 @@ const products = [
     price: 2665,
     image: img5,
     bestPrice: false,
+    cartQuantity: 0
   },
 ];
 
-export default function Catagory2({ category ,onReset }) {
+export default function Catagory2({ category, onReset }) {
   const [prod, setProd] = useState("ALL")
-   const handleReset = () => {
+  const handleReset = () => {
     setProd("ALL");
   };
   // const filteredProducts =
   //   category === "ALL"
   //     ? products.filter((p)=>p.category!==category)
   //     : products.filter((p) => p.category === category);
- 
+
   const filteredProducts =
     category === prod ? products
       : products.filter((p) => p.category === category);
@@ -72,12 +78,14 @@ export default function Catagory2({ category ,onReset }) {
     <div className="product-list my-4 d-flex flex-wrap justify-content-evenly">
 
       {filteredProducts.length !== 0 ? filteredProducts.map((item) => (
-        <CatagoryCart key={item.id} product={item} />
-
+        <>
+          <CatagoryCart key={item.id} product={item} price={item.price} />
+          {/* <Product /> */}
+        </>
       )) : (<div> <p>No Products match your filters</p>
         <button onClick={onReset}>Reset Filters</button>
       </div>)}
-     
+
     </div>
   )
 

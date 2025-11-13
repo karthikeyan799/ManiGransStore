@@ -1,11 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
 
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { getTotal, logout } from '../Slices/ManiSlice';
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [isBtn,setIsBtn]=useState(false)
+    const [isBtn, setIsBtn] = useState(false)
     const location = useLocation();
+    const cartItems = useSelector(state => state.mani.cartItems);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    // console.log(cartItems.length);
+    const user = useSelector(state => state.mani.user);
+    // const { cartTotalQuantity } = useSelector(state => state.mani)
+    const cart = useSelector(state => state.mani)
+    const handleLogout = () => {
+        dispatch(logout());
+        navigate('/')
+
+    }
+    useEffect(() => {
+        dispatch(getTotal())
+    }, [cartItems, dispatch])
+
 
     const isActive = (path) => {
         return location.pathname === path ? 'active' : ''
@@ -31,7 +49,7 @@ export default function Navbar() {
         const handleClickOutside = (event) => {
             if (!event.target.closest('.contUl')) {
                 // setIsMenuOpen(false)
-                 document.body.classList.remove('show-mobile-menu');
+                document.body.classList.remove('show-mobile-menu');
                 setIsBtn(false)
                 console.log("click out side ...")
             }
@@ -40,7 +58,6 @@ export default function Navbar() {
         document.addEventListener('click', handleClickOutside)
         return () => document.removeEventListener('click', handleClickOutside)
     }, [isBtn])
-
 
     useEffect(() => {
         const menuOpenButton = document.getElementById("menu-open-button"); // no '#'
@@ -92,9 +109,26 @@ export default function Navbar() {
 
                 </ul>
                 <ul className='nav'>
-                    <li className='nav-list border'>LOGIN OR REGISTER</li>
-                    <li className='nav-list border'>YOUR BAG <span className='batch'>0</span></li>
+                    {user ? (
+                        <>
+
+                            <li className='nav-list'>My Orders {user ? user.name : ""}</li>
+                            <li className='nav-list'>
+                                <Link className='item' to={"/cart"}>Cart</Link>
+                            </li>
+                            <li className='nav-list'> <Link onClick={(e) => handleLogout(e)}>Logout</Link></li>
+                            <li className='nav-list border'><Link to={"/cart"}>YOUR BAG </Link><span className='bath'>
+                                {/* {cartItems.length}   */}
+                                {/* {cartTotalQuantity} */}
+                                {cart.cartTotalQuantity}
+                            </span></li></>
+                    ) : (
+                        <li className='nav-list border'>
+                            <Link to={"/login"} >LOGIN</Link> OR <Link to={"/registration"}>REGISTER</Link>
+                        </li>
+                    )}
                 </ul>
+
             </nav>
             <nav className='container-fluid cont border px-4 px-lg-5'>
                 <div className='contImg'></div>
@@ -120,13 +154,29 @@ export default function Navbar() {
                         <ul className={`nav text-black nav-menu ${isMenuOpen ? 'active' : ''}`}>
                             <ul className='nav d-sm-flex d-md-flex d-lg-none'>
                                 <div className='contImg my-4'></div>
-                                <li className='nav-item border'>
-                                    <Link className='items' onClick={clickOut} >Login</Link>
+                                {user ? (
+                                    <>
 
-                                </li>
-                                <li className='nav-item border'>
-                                    <Link className='items' onClick={clickOut}>Register</Link>
-                                </li>
+                                        <li className='nav-list'>My Orders {user ? user.name : ""}</li>
+                                        {/* <li className='nav-item'>
+                                            <Link className='items' to={"/cart"}>Cart</Link>
+                                        </li> */}
+                                        <li className='nav-item'> <Link className='items' onClick={(e) => handleLogout(e)}>Logout</Link></li>
+                                        <li className='nav-item border'><Link to={"/cart"} onClick={clickOut} className='items'>YOUR BAG <span className='bath'>
+                                            {/* {cartItems.length}   */}
+                                            {/* {cartTotalQuantity} */}
+                                            {cart.cartTotalQuantity}
+                                        </span></Link></li>
+                                    </>) : (<>
+                                        <li className='nav-item border'>
+                                            <Link className='items' onClick={clickOut} to={"/login"} >Login</Link>
+
+                                        </li>
+                                        <li className='nav-item border'>
+                                            <Link className='items' onClick={clickOut} to={"/registration"}>Register</Link>
+                                        </li>
+                                    </>
+                                )}
                             </ul>
                             <li className="nav-item">
                                 <Link
