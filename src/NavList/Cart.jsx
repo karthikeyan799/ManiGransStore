@@ -45,7 +45,7 @@ export default function Cart() {
                       <div className='d-flex align-items-center justify-content-between'>
 
                         <div className='my2 fw-bold bottom-0'>
-                          <button className=' border rounded-pill my-2 px-md-3 py-md-2 px-2 py-1  btn btn-secondary text-center me-md-3 m-0'
+                          <button className=' border rounded-pill my-2 px-3 py-2 px-2 py-1  btn btn-secondary text-center me-md-3 m-0'
                             onClick={() => decriment(item)}
                             style={{ cursor: user ? "pointer" : "not-allowed" }}
                           // disabled={item.cartQuantity === 1}
