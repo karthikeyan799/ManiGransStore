@@ -36,7 +36,7 @@ export default function Cart() {
               return (
                 // <div className='col-7 d-flex justify-content-between align-items-start flex-column'>
                 <div className='bg-white border p-2 mb-2'>
-                  <div className='  d-flex align-items-center  bg-white' key={item.id}>
+                  <div className='  d-flex flex-column flex-md-row align-items-center  bg-white' key={item.id}>
                     <img src={item.image} className='col-12 col-md-2' alt="cartimage" />
                     <div className='col-md-10 col-12'>
                       <h5 className='py-2 fw-bolder'>{item.name}</h5>
@@ -45,7 +45,7 @@ export default function Cart() {
                       <div className='d-flex align-items-center justify-content-between'>
 
                         <div className='my2 fw-bold bottom-0'>
-                          <button className=' border rounded-pill my-2 px-3 py-2 btn btn-secondary text-center me-md-3 m-0'
+                          <button className=' border rounded-pill my-2 px-md-3 py-md-2 px-2 py-1  btn btn-secondary text-center me-md-3 m-0'
                             onClick={() => decriment(item)}
                             style={{ cursor: user ? "pointer" : "not-allowed" }}
                           // disabled={item.cartQuantity === 1}

@@ -101,7 +101,7 @@ const maniSlice = createSlice({
 
         login: (state, action) => {
             state.user = action.payload;
-            toast.success(`Login Successfully...`)
+            toast.success(`Login Successfully...`, {position: "bottom-left"})
         },
         logout: (state) => {
             state.user = null;
