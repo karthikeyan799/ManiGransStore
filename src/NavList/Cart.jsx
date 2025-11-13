@@ -37,21 +37,21 @@ export default function Cart() {
                 // <div className='col-7 d-flex justify-content-between align-items-start flex-column'>
                 <div className='bg-white border p-2 mb-2'>
                   <div className='  d-flex align-items-center  bg-white' key={item.id}>
-                    <img src={item.image} className='col-2' alt="cartimage" />
-                    <div className='col-10'>
+                    <img src={item.image} className='col-12 col-md-2' alt="cartimage" />
+                    <div className='col-md-10 col-12'>
                       <h5 className='py-2 fw-bolder'>{item.name}</h5>
                       <h5 className='fw-bolder'>price: ₹{item.price}</h5>
                       <p className='w-100'>{item.description}</p>
                       <div className='d-flex align-items-center justify-content-between'>
 
                         <div className='my2 fw-bold bottom-0'>
-                          <button className=' border rounded-pill my-2 px-3 py-2 btn btn-secondary text-center me-3'
+                          <button className=' border rounded-pill my-2 px-3 py-2 btn btn-secondary text-center me-md-3 m-0'
                             onClick={() => decriment(item)}
                             style={{ cursor: user ? "pointer" : "not-allowed" }}
                           // disabled={item.cartQuantity === 1}
                           >-</button>
                           {item.cartQuantity}
-                          <button className=' border rounded-pill my-2 px-3 py-2 btn btn-secondary text-center ms-3'
+                          <button className=' border rounded-pill my-2 px-3 py-2 btn btn-secondary text-center ms-md-3 m-0'
                             onClick={() => increament(item)}
                             style={{ cursor: user ? "pointer" : "not-allowed" }}>+</button>
                           {/* <button className='btn btn-warning' onClick={() => dispatch(removeCart({ id: item.id }))}>Remove</button> */}
