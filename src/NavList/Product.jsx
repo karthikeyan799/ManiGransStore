@@ -74,18 +74,18 @@ export default function Product({ title, image }) {
                         <li className='nav-item bg-success p-3  m-0 rounded-5'></li>
                         <li className='nav-item bg-warning p-3  m-0 rounded-5'></li>
                     </ul>
-                    <h5>Quantity</h5>
+                    {/* <h5>Quantity</h5>
                     <div className='d-flex flex-row border justify-content-cener align-items-center'>
                         <button className=' border rounded-pill my-2 px-3 py-2 btn btn-secondary text-center me-3'
                             onClick={() => decriment(index)}
                             style={{ cursor: user ? "pointer" : "not-allowed" }}
-                        // disabled={item.cartQuantity === 1}
+                       
                         >-</button>
                         {index.cartQuantity}
                         <button className=' border rounded-pill my-2 px-3 py-2 btn btn-secondary text-center ms-3'
                             onClick={() => increament(index)}
                             style={{ cursor: user ? "pointer" : "not-allowed" }}>+</button>
-                    </div>
+                    </div> */}
                     <div>
                         {/* <button className='btn btn-outline-success me-3 px-4 py-2'
                         // onClick={() => dispatch(addtoCart({ title, image }))}
@@ -105,7 +105,7 @@ export default function Product({ title, image }) {
 
                     {without.map((w) => {
                         return (
-                            <div className='d-flex flex-column bg-priary border px-5 col mx-5 m-md-0 rounded-3 m-3  p-2 py-4' key={w.id} onClick={() => navigate(`/product/${w.id}`)}>
+                            <div className='d-flex flex-column bg-priary border px-5 col mx-5 m-md-3 rounded-3 m-3  p-2 py-4' key={w.id} onClick={() => navigate(`/product/${w.id}`)}>
                                 <img src={w.image} alt={w.name} className="product-img col-8 h-75 " />
                                 <div className='col-12 align-items-center'>
                                     {/* <p className="category">{w.category}</p> */}

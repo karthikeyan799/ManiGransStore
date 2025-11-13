@@ -10,14 +10,20 @@ export default function Navbar() {
     const location = useLocation();
     const cartItems = useSelector(state => state.mani.cartItems);
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+
+    const username = useSelector(state => state.mani.user?.name);
+    // const initial=username ? username.
+    const initial = username ? username.charAt(0).toUpperCase() : '';
     // console.log(cartItems.length);
     const user = useSelector(state => state.mani.user);
     // const { cartTotalQuantity } = useSelector(state => state.mani)
     const cart = useSelector(state => state.mani)
+    const navigate = useNavigate();
     const handleLogout = () => {
+
         dispatch(logout());
-        navigate('/')
+        // navigate('/')
+        alert("LogOut...")
 
     }
     useEffect(() => {
@@ -111,12 +117,12 @@ export default function Navbar() {
                 <ul className='nav'>
                     {user ? (
                         <>
-
+                            <li>{initial && <span>{initial}</span> }</li>
                             <li className='nav-list'>My Orders {user ? user.name : ""}</li>
                             <li className='nav-list'>
                                 <Link className='item' to={"/cart"}>Cart</Link>
                             </li>
-                            <li className='nav-list'> <Link onClick={(e) => handleLogout(e)}>Logout</Link></li>
+                            <li className='nav-list'> <Link onClick={(e) => handleLogout()}>Logout</Link></li>
                             <li className='nav-list border'><Link to={"/cart"}>YOUR BAG </Link><span className='bath'>
                                 {/* {cartItems.length}   */}
                                 {/* {cartTotalQuantity} */}
